@@ -1,261 +1,68 @@
-== Welcome to Rails
-
-Rails is a web-application framework that includes everything needed to create
-database-backed web applications according to the Model-View-Control pattern.
-
-This pattern splits the view (also called the presentation) into "dumb"
-templates that are primarily responsible for inserting pre-built data in between
-HTML tags. The model contains the "smart" domain objects (such as Account,
-Product, Person, Post) that holds all the business logic and knows how to
-persist themselves to a database. The controller handles the incoming requests
-(such as Save New Account, Update Product, Show Post) by manipulating the model
-and directing data to the view.
-
-In Rails, the model is handled by what's called an object-relational mapping
-layer entitled Active Record. This layer allows you to present the data from
-database rows as objects and embellish these data objects with business logic
-methods. You can read more about Active Record in
-link:files/vendor/rails/activerecord/README.html.
-
-The controller and view are handled by the Action Pack, which handles both
-layers by its two parts: Action View and Action Controller. These two layers
-are bundled in a single package due to their heavy interdependence. This is
-unlike the relationship between the Active Record and Action Pack that is much
-more separate. Each of these packages can be used independently outside of
-Rails. You can read more about Action Pack in
-link:files/vendor/rails/actionpack/README.html.
+va link con pantallas en ai CS3 (Pesa un montón porque están las imagenes e hizo lio al exportar desde indesign a illustrator):
+http://www.correccionesweb.com.ar/javi-obando_illustrator-CS3.zip
 
 
-== Getting Started
+Consideraciones generales:
+- Rollovers: en cada .ai hay una capa con los estados de rollover de los botones.
+- Navegación con flechas del teclado.
+- Plano etiqueta botón comercial.
+- El color más oscuro que parece negro es un azul.
+- Posibilidad de poner en una imagen que vaya a pantalla completa (en esa entrada se mostraría solo una imagen, no tendría el cursor parar pasar a la derecha).
+- La imagen de la portada tiene que poder cambiarla.
+- Jpg Animado. Al salir de blogger habíamos visto la posibilidad de hacer un JPG/GIF animado, que pasase muchas fotos rapidamente y que se detuviera al hacerle rollover.
 
-1. At the command prompt, create a new Rails application:
-       <tt>rails new myapp</tt> (where <tt>myapp</tt> is the application name)
+Fuentes:
+- Lora
+http://www.google.com/webfonts#UsePlace:use/Collection:Lora
+- Montserrat
+http://www.google.com/webfonts#UsePlace:use/Collection:Montserrat
 
-2. Change directory to <tt>myapp</tt> and start the web server:
-       <tt>cd myapp; rails server</tt> (run with --help for options)
+Animaciones:
+> para pasar las foto hacia abajo con efecto de slides: 
+http://editsquarterly.com/
+> para pasar las fotos lateral:
+http://www.seanmalyon.co.uk/portraits.php
+- Al clickear en contacto o portfolio baja el plano desde arriba desplazando todo el contenido hacia abajo. El más central gira y se vuelve una cruz de cierre.
+- Rollovers: que pasen al color correspondiente con una animación de fundido.
 
-3. Go to http://localhost:3000/ and you'll see:
-       "Welcome aboard: You're riding Ruby on Rails!"
+Pantallas:
+javi-obando_0_portada.ai
+- va videito de referencia para la animación del scroll de la portada. La foto de fondo lleva encima un plano blanco en transparencia con los elementos para la navegación. Lo primero que escrollea deja al descubierto la foto inferior limpia, sin nada (lo mismo debería ocurrir al presionar la flecha abajo del teclado)
+- las flechas de abajo (solo indican que se puede navegar con el teclado), que vayan con el margen que están respecto a la ventana del navegador (no en una posición fija. Es para evitar que queden afuera de la ventana)
+- Al clickear en la mano scrollea directo al pie de la página.
 
-4. Follow the guidelines to start developing your application. You can find
-the following resources handy:
+javi-obando_01_contacto.ai
+- Al clickear en contacto baja el contenido en un plano desde arriba desplazando todo el contenido hacia abajo. 
 
-* The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
-* Ruby on Rails Tutorial Book: http://www.railstutorial.org/
+javi-obando_02_portfolio.ai
+- Al clickear en portfolio baja el contenido en un plano desde arriba desplazando todo el contenido hacia abajo. 
 
+javi-obando_03_a-foto.ai
+- Muestra como se ven las fotos.
+javi-obando_03_b-foto-info.ai
+- Al clickear en el + del recuadro se despliega el plano con la info y el + gira para convertirse en una X que cierra la info con la misma animación. Primero se depliega el plano y luego aparece la info con una animación de opacidad. Tiene que tener la posibilidad de poner un link en los nombres dentro de la ficha.
+javi-obando_03_c-foto2.ai
+- En la primer imagen de la entrada, al hacer rollover en la flecha de la derecha, ingresa desde el costado la siguiente foto de esa entrada con un plano blanco en opacidad (igual que el de la portada). Al hacer rollout la imagen sale. Una vez que pasamos a la segunda foto las imagenes siguientes ya aparecen claras hacia ambos costados sin necesidad de hacer rollover. 
 
-== Debugging Rails
+javi-obando_04_pie_personal.ai
+- Al clickear en la mano scrollea directo a la portada de la página.
+- El link a entrecasa va contra el ángulo inferior de la ventana (no en posición fija)
 
-Sometimes your application goes wrong. Fortunately there are a lot of tools that
-will help you debug it and get it back on the rails.
+javi-obando_05_a-comercial_portada.ai
+- Contacto y portfolio funcionan igual que en la otra sección; baja el plano desplazando el contenido hacia abajo
 
-First area to check is the application log files. Have "tail -f" commands
-running on the server.log and development.log. Rails will automatically display
-debugging and runtime information to these files. Debugging info will also be
-shown in the browser on requests from 127.0.0.1.
+javi-obando_05_b-comercial_foto-info.ai
+javi-obando_05_c-comercial_foto2.ai
+- En la primer imagen de la entrada, al hacer rollover en la flecha de la derecha, ingresa desde el costado la siguiente foto de esa entrada con un plano oscuro en opacidad. Al hacer rollout la imagen sale. Una vez que pasamos a la segunda foto las imagenes siguientes ya aparecen claras hacia ambos costados sin necesidad de hacer rollover. 
+javi-obando_05_d-comercial_foto3.ai
+- Así se ve cuando pasamos a la segunda foto.
 
-You can also log your own messages directly into the log file from your code
-using the Ruby logger class from inside your controllers. Example:
-
-  class WeblogController < ActionController::Base
-    def destroy
-      @weblog = Weblog.find(params[:id])
-      @weblog.destroy
-      logger.info("#{Time.now} Destroyed Weblog ID ##{@weblog.id}!")
-    end
-  end
-
-The result will be a message in your log file along the lines of:
-
-  Mon Oct 08 14:22:29 +1000 2007 Destroyed Weblog ID #1!
-
-More information on how to use the logger is at http://www.ruby-doc.org/core/
-
-Also, Ruby documentation can be found at http://www.ruby-lang.org/. There are
-several books available online as well:
-
-* Programming Ruby: http://www.ruby-doc.org/docs/ProgrammingRuby/ (Pickaxe)
-* Learn to Program: http://pine.fm/LearnToProgram/ (a beginners guide)
-
-These two books will bring you up to speed on the Ruby language and also on
-programming in general.
-
-
-== Debugger
-
-Debugger support is available through the debugger command when you start your
-Mongrel or WEBrick server with --debugger. This means that you can break out of
-execution at any point in the code, investigate and change the model, and then,
-resume execution! You need to install ruby-debug to run the server in debugging
-mode. With gems, use <tt>sudo gem install ruby-debug</tt>. Example:
-
-  class WeblogController < ActionController::Base
-    def index
-      @posts = Post.all
-      debugger
-    end
-  end
-
-So the controller will accept the action, run the first line, then present you
-with a IRB prompt in the server window. Here you can do things like:
-
-  >> @posts.inspect
-  => "[#<Post:0x14a6be8
-          @attributes={"title"=>nil, "body"=>nil, "id"=>"1"}>,
-       #<Post:0x14a6620
-          @attributes={"title"=>"Rails", "body"=>"Only ten..", "id"=>"2"}>]"
-  >> @posts.first.title = "hello from a debugger"
-  => "hello from a debugger"
-
-...and even better, you can examine how your runtime objects actually work:
-
-  >> f = @posts.first
-  => #<Post:0x13630c4 @attributes={"title"=>nil, "body"=>nil, "id"=>"1"}>
-  >> f.
-  Display all 152 possibilities? (y or n)
-
-Finally, when you're ready to resume execution, you can enter "cont".
+javi-obando_06_pie_comercial.ai
+- Al clickear en la mano scrollea directo a la portada de comercial.
+- El link a entrecasa va contra el ángulo inferior de la ventana (no en posición fija)
 
 
-== Console
+Esto sería todo. 
+Por último una pregunta de Javier, ¿cómo se va a ver el sitio en los celulares?
 
-The console is a Ruby shell, which allows you to interact with your
-application's domain model. Here you'll have all parts of the application
-configured, just like it is when the application is running. You can inspect
-domain models, change values, and save to the database. Starting the script
-without arguments will launch it in the development environment.
-
-To start the console, run <tt>rails console</tt> from the application
-directory.
-
-Options:
-
-* Passing the <tt>-s, --sandbox</tt> argument will rollback any modifications
-  made to the database.
-* Passing an environment name as an argument will load the corresponding
-  environment. Example: <tt>rails console production</tt>.
-
-To reload your controllers and models after launching the console run
-<tt>reload!</tt>
-
-More information about irb can be found at:
-link:http://www.rubycentral.org/pickaxe/irb.html
-
-
-== dbconsole
-
-You can go to the command line of your database directly through <tt>rails
-dbconsole</tt>. You would be connected to the database with the credentials
-defined in database.yml. Starting the script without arguments will connect you
-to the development database. Passing an argument will connect you to a different
-database, like <tt>rails dbconsole production</tt>. Currently works for MySQL,
-PostgreSQL and SQLite 3.
-
-== Description of Contents
-
-The default directory structure of a generated Ruby on Rails application:
-
-  |-- app
-  |   |-- assets
-  |       |-- images
-  |       |-- javascripts
-  |       `-- stylesheets
-  |   |-- controllers
-  |   |-- helpers
-  |   |-- mailers
-  |   |-- models
-  |   `-- views
-  |       `-- layouts
-  |-- config
-  |   |-- environments
-  |   |-- initializers
-  |   `-- locales
-  |-- db
-  |-- doc
-  |-- lib
-  |   `-- tasks
-  |-- log
-  |-- public
-  |-- script
-  |-- test
-  |   |-- fixtures
-  |   |-- functional
-  |   |-- integration
-  |   |-- performance
-  |   `-- unit
-  |-- tmp
-  |   |-- cache
-  |   |-- pids
-  |   |-- sessions
-  |   `-- sockets
-  `-- vendor
-      |-- assets
-          `-- stylesheets
-      `-- plugins
-
-app
-  Holds all the code that's specific to this particular application.
-
-app/assets
-  Contains subdirectories for images, stylesheets, and JavaScript files.
-
-app/controllers
-  Holds controllers that should be named like weblogs_controller.rb for
-  automated URL mapping. All controllers should descend from
-  ApplicationController which itself descends from ActionController::Base.
-
-app/models
-  Holds models that should be named like post.rb. Models descend from
-  ActiveRecord::Base by default.
-
-app/views
-  Holds the template files for the view that should be named like
-  weblogs/index.html.erb for the WeblogsController#index action. All views use
-  eRuby syntax by default.
-
-app/views/layouts
-  Holds the template files for layouts to be used with views. This models the
-  common header/footer method of wrapping views. In your views, define a layout
-  using the <tt>layout :default</tt> and create a file named default.html.erb.
-  Inside default.html.erb, call <% yield %> to render the view using this
-  layout.
-
-app/helpers
-  Holds view helpers that should be named like weblogs_helper.rb. These are
-  generated for you automatically when using generators for controllers.
-  Helpers can be used to wrap functionality for your views into methods.
-
-config
-  Configuration files for the Rails environment, the routing map, the database,
-  and other dependencies.
-
-db
-  Contains the database schema in schema.rb. db/migrate contains all the
-  sequence of Migrations for your schema.
-
-doc
-  This directory is where your application documentation will be stored when
-  generated using <tt>rake doc:app</tt>
-
-lib
-  Application specific libraries. Basically, any kind of custom code that
-  doesn't belong under controllers, models, or helpers. This directory is in
-  the load path.
-
-public
-  The directory available for the web server. Also contains the dispatchers and the
-  default HTML files. This should be set as the DOCUMENT_ROOT of your web
-  server.
-
-script
-  Helper scripts for automation and generation.
-
-test
-  Unit and functional tests along with fixtures. When using the rails generate
-  command, template test files will be generated for you and placed in this
-  directory.
-
-vendor
-  External libraries that the application depends on. Also includes the plugins
-  subdirectory. If the app has frozen rails, those gems also go here, under
-  vendor/rails/. This directory is in the load path.
+Avisame qué más necesitás.
