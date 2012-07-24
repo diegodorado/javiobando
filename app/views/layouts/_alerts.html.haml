@@ -1,0 +1,14 @@
+%noscript
+  .alert.alert-error
+    Tienes javascript deshabilitado. No todo se verá correctamente pero puedes hechar un vistazo.
+-if notice
+  .alert.alert-success
+    %a.close{:data => {:dismiss => "alert"}, :href=>"#"}
+      &times;
+    = notice
+-if alert
+  .alert.alert-error
+    %a.close{:data => {:dismiss => "alert"}, :href=>"#"}
+      &times;
+    = alert
+

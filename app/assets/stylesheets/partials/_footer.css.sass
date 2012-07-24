@@ -1,0 +1,81 @@
+@import 'partials/base'
+
+footer
+  overflow: hidden
+  .inner
+    height: 920px
+    margin-top: 105px
+    overflow: hidden
+    text-align: center
+    position: relative
+    .contact
+      .logos
+        margin-top: 63px
+        .otc-link
+          +inline-block
+          +hide-text
+        .crudo-link
+          +inline-block      
+          +hide-text
+          margin-top: 23px
+          margin-left: 66px    
+    .hand-up
+      margin-top: 108px
+    .title
+      h1
+        line-height: 46px
+      margin-top: 50px
+    .design-link
+      +inline-block      
+      +hide-text
+      position: absolute
+      bottom: 25px
+      right: 19px
+
+
+body.home.index
+  footer
+    background: #fff
+    .design-link
+      @extend .icon-design-logo
+    .otc-link
+      @extend .icon-otc-logo
+    .crudo-link
+      @extend .icon-crudo-logo
+    .hand-up .icon
+      @extend .icon-hand-up
+    .envelope .icon
+      @extend .icon-email-white
+      
+    .inner
+      background: $blue image-url("saw-white-down.png") repeat-x center top
+      .title h1
+        color: $white-blue
+      .contact a
+        color: #fff
+
+body.home.comercial
+  footer
+    background: $blue
+    .design-link
+      @extend .icon-design-logo
+    .otc-link
+      @extend .icon-otc-logo-dark
+    .crudo-link
+      @extend .icon-crudo-logo-dark
+    .hand-up .icon
+      @extend .icon-hand-up-white
+    .envelope .icon
+      @extend .icon-email
+      
+    .inner
+      background: #fff image-url("saw-dark-down.png") repeat-x center top
+      .title
+        h1
+          color: $green
+        h2
+          color: $blue
+      .contact a
+        color: $lite-blue
+
+

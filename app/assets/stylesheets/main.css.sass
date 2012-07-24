@@ -1,0 +1,38 @@
+@import 'compass'
+@import 'compass/reset'
+@import 'partials/icons'
+@import 'partials/shared'
+@import 'partials/header'
+@import 'partials/footer'
+@import 'partials/slideshow'
+
+
+@each $i in 10 32
+  #bg#{$i} 
+    background: image-url("bg#{$i}.png") no-repeat center top
+    height: image-height("bg#{$i}.png")
+
+
+#wrapper
+  min-height: 1000px
+  width: 100%
+  margin: 0
+  padding: 0 0 50px 0
+
+article
+  background: #fff
+  //position: fixed
+  //position: relative
+  top: 0
+  left: 0
+  width: 100%
+  min-height: 100%
+  //-moz-box-shadow: 0 0 12px #666
+  //-webkit-box-shadow: 0 0 12px #666
+  //z-index: 99999
+
+body
+  a
+    text-decoration: none
+
+

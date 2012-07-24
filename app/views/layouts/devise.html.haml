@@ -1,0 +1,34 @@
+!!! 5
+/[if lt IE 7] <html lang="en" class="no-js ie6">
+/[if IE 7 ]    <html lang="en" class="no-js ie7">
+/[if IE 8 ]    <html lang="en" class="no-js ie8">
+/[if IE 9 ]    <html lang="en" class="no-js ie9">
+/ [if gt IE 9]><!
+%html.no-js{:lang => "es"}
+  / <![endif]  
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    %title Guillermo Lema
+    %meta{:content => "Guillermo Lema Site", :name => "description"}/
+    %meta{:content => "diegodorado@gmail.com", :name => "author"}/
+    / Mobile viewport optimized: j.mp/bplateviewport
+    %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+    / Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    = javascript_include_tag 'modernizr'
+    = stylesheet_link_tag 'application'
+    = csrf_meta_tag
+    
+  %body{:class => body_classes.join(' ')}
+    %header
+      .container
+        =render :partial => "layouts/header"
+    #content{:role => "main"}
+      .container
+        =render :partial => "layouts/alerts"
+        = yield
+    %footer
+      .container
+        =render :partial => "layouts/footer"
