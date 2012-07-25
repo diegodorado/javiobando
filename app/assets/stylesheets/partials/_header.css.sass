@@ -8,8 +8,8 @@ header
     text-align: center
     position: relative
     .top
-      background: #fff
-      padding-top: 50px
+      background: $white
+      padding-top: 20px
     .middle
       .cp-links
         background: image-url("saw-white-down.png") repeat-x center top
@@ -50,7 +50,7 @@ header
       +inline-block
       margin-top: 78px
       span
-        color: #ccc
+        color: $grey1
         display: block
         margin-top: 8px
         text-transform: uppercase
@@ -69,7 +69,7 @@ header
       height: 254px
     .cp-links
       .contact-link
-        color: #999
+        color: $grey2
       .portfolio-link
         color: $lite-blue
 
@@ -80,7 +80,7 @@ header
       .contact-link
         color: $lite-blue
       .portfolio-link
-        color: #999
+        color: $grey2
 
   &.contact-open, &.portfolio-open
     background-position: center 304px
@@ -89,16 +89,15 @@ header
       +rotate
 
 body.home.index
-
   header
-    background: image-url("cover.png") no-repeat center 50px
+    background: image-url("cover.jpg") no-repeat center center
     background-size: cover
     +transition(background 0.5s ease)
     .inner
       height: 100% //hack
       .middle
         height: 100%
-        background: rgba(#fff, 0.7)
+        background: rgba($white, 0.7)
         .title
           margin-top: 110px
         .hand-down
@@ -137,10 +136,10 @@ body.home.comercial
       .plus-sign .icon
         @extend .icon-plus-sign-white
       a
-        color: #fff
+        color: $white
 
     .title h1
-      color: $white-blue
+      color: $grey1
 
 
 
@@ -151,18 +150,19 @@ body.home.comercial
   bottom: 20px
   width: 100% //does this work on every browser??
   z-index: 10
+  
 #header-tab
   display: block
   position: absolute
   top: 0
   right: 132px
-  opacity: 0.85
+  +opacity(0.85)
   z-index: 10
   i, span
     display: block
   span
     background: $green
-    padding-top: 84px
+    padding-top: 52px
     height: 18px
     line-height: 18px
     text-align: center
@@ -172,5 +172,3 @@ body.home.comercial
     font-size: 11px
     padding-bottom: 8px
 
-
-      

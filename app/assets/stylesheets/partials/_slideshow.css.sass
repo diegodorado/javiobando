@@ -1,25 +1,128 @@
+
 .slideshow
+  +transparent
+  +transition(opacity 0.5s ease)      
   overflow: hidden
   position: relative
   padding: 30px 0
-  height: 900px
-  ul
+  .icon-right-arrow, .icon-left-arrow
+    +opaque
+    +transition(opacity 1s ease)
     position: absolute
-    height: 900px
+    top: 472px  // ss.height/2 + ss.paddingTop - self.height/2 : 450 + 30 - 8
+    z-index: 20
+    cursor: pointer
+  ul
+    z-index: 10  
+    overflow: hidden
     width: 100000px
     li
       float: left
       margin: 0 37px
-      height: 900px
-      line-height: 900px
       cursor: pointer
-      img
-        +box-shadow(2px 2px 5px 5px #ccc)
-        +opacity(0.3)
-        +transition(opacity 0.5s ease)
+      text-align: center
+      .img-wrapper
         border: 6px solid #fff
-        vertical-align: middle
+        img
+          max-width: 900px
+          max-height: 900px
+          +opacity(0.3)
+          +transition(opacity 0.5s ease)
+          vertical-align: middle
+      .img-data
+        margin: 43px auto
+        width: 250px
+        font-family: Montserrat
+        font-size: 13px
+        line-height: 22px
+        text-transform: uppercase
+
+        .img-data-handler, .img-data-wrapper .top
+          border-style: solid
+        .img-data-handler
+          cursor: pointer
+          height: 15px
+          border-width: 1px
+          line-height: 12px
+          .icon
+            +transition(all 0.5s ease)    
+        .img-data-wrapper
+          //+transparent
+          overflow: hidden
+          .top
+            margin-top: 4px
+            border-width: 1px 1px 0 1px
+            padding: 18px 24px 0
+            span, a
+              +transition(opacity 0.5s ease)    
+              +transparent
+        &.open
+          .img-data-handler .icon
+            +rotate
+          .img-data-wrapper .top
+            span, a
+              +opaque
       &.current
         cursor: default
-        img
-          +opaque  
+        .img-wrapper
+          img
+            +opaque   
+
+  &.ready
+    +opaque
+    ul
+      position: absolute
+      overflow: visible
+      .img-data-wrapper
+        display: none
+  &.moving
+    .icon-right-arrow, .icon-left-arrow
+      +transparent
+      +transition(none)
+  &.first
+    .icon-left-arrow
+      display: none
+  &.last
+    .icon-right-arrow
+      display: none
+  &.first //.not-played
+    li
+      +transparent
+      +transition(opacity 1s ease)      
+      &.current
+        +opaque
+  &.first.next-hover //.not-played.next-hover
+    li
+      +opaque
+    
+body.home.index
+  .slideshow
+    .img-wrapper
+      +box-shadow(2px 2px 5px 5px $grey1)
+    .img-data
+      .img-data-handler .icon
+        @extend .icon-plus-sign2
+      span
+        color: #2E3D4A
+      a
+        color: #C5C7C9
+      .img-data-handler, .img-data-wrapper .top
+        border-color: #C1C3C5
+      .img-data-wrapper .bottom
+        @extend .icon-envelope-down
+    
+
+body.home.comercial
+  .slideshow
+    .img-data
+      .img-data-handler .icon
+        @extend .icon-plus-sign2-white
+      span
+        color: $grey3
+      a
+        color: #FCFCFC
+      .img-data-handler, .img-data-wrapper .top
+        border-color: #F5F5F5
+      .img-data-wrapper .bottom
+        @extend .icon-envelope-down-white
+
