@@ -64,39 +64,17 @@ header
       +transition(all 0.5s ease)
 
 
-  &.contact-open
-    .contact
-      height: 254px
-    .cp-links
-      .contact-link
-        color: $grey2
-      .portfolio-link
-        color: $lite-blue
-
-  &.portfolio-open
-    .portfolio
-      height: 254px
-    .cp-links
-      .contact-link
-        color: $lite-blue
-      .portfolio-link
-        color: $grey2
+  &.contact-open .contact, &.portfolio-open .portfolio
+    height: 250px
 
   &.contact-open, &.portfolio-open
-    background-position: center 304px
-
     .plus-sign .icon
       +rotate
 
 body.home.index
   header
-    background: image-url("cover.jpg") no-repeat center center
-    background-size: cover
-    +transition(background 0.5s ease)
     .inner
-      height: 100% //hack
       .middle
-        height: 100%
         background: rgba($white, 0.7)
         .title
           margin-top: 110px
@@ -111,14 +89,23 @@ body.home.index
       .plus-sign .icon
         @extend .icon-plus-sign
       a
-        color: $green
+        color: $blue
 
+    &.contact-open
+      .cp-links
+        .contact-link
+          color: $grey2
+
+    &.portfolio-open
+      .cp-links
+        .portfolio-link
+          color: $grey2
 
     .title
       h1
-        color: $green
-      h2
         color: $blue
+      h2
+        color: $green
 
 
 body.home.comercial
@@ -138,12 +125,16 @@ body.home.comercial
       a
         color: $white
 
-    .title h1
-      color: $grey1
+    .title
+      h1
+        color: $grey1
+      h2
+        color: $green
 
 
-
-      
+header, article, footer
+  +transition(margin 0.5s ease)
+        
 #header-arrows
   text-align: center
   position: absolute

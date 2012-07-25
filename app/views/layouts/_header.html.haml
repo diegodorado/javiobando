@@ -1,46 +1,47 @@
-%header
-  -if current_page?(root_path)
-    %a#header-tab{:href=>comercial_path}
-      %span comercial
-      %i.icon-tab
-  -else
-    %a#header-tab{:href=>root_path}
-      %span personal
-      %i.icon-tab
-  #header-arrows
-    %i.icon-arrows 
-  .inner
-    .top
-      .contact
-        .envelope
-          %i.icon
-        .emails
-          %span.label personal:
-          %a(href='#') javi@onthecorner.com.ar
-          %br
-          %span.label comercial:
-          %a(href='#') quiero@hellocrudo.com
-        .links
-          %a(href='#') www.javiobando.tumblr.com
-          %br
-          %a(href='#') www.onthecorner.com.ar
-      .portfolio
-        %a.pdf-link(href='#')
-          %i.icon-briefcase
-          %span descargar
-    .middle
-      .cp-links
-        %a.contact-link(href="#")
-          contacto
-        %a.plus-sign(href="#")
-          %i.icon
-        %a.portfolio-link(href="#")
-          portfolio
-      .title
-        %h1 Javi Obando
-        %h2 fotografía
-      .hand-down
-        %a(href='#')
-          %i.icon
-    .bottom
+-if current_page?(root_path) #hack
+  %header
+    -if current_page?(root_path)
+      %a#header-tab{:href=>comercial_path}
+        %span comercial
+        %i.icon-tab
+    -else
+      %a#header-tab{:href=>root_path}
+        %span personal
+        %i.icon-tab
+    .inner
+      #header-arrows
+        %i.icon-arrows 
+      .top
+        .contact
+          .envelope
+            %i.icon
+          .emails
+            %span.label personal:
+            %a(href='#') javi@onthecorner.com.ar
+            %br
+            %span.label comercial:
+            %a(href='#') quiero@hellocrudo.com
+          .links
+            %a(href='#') www.javiobando.tumblr.com
+            %br
+            %a(href='#') www.onthecorner.com.ar
+        .portfolio
+          %a.pdf-link(href='#')
+            %i.icon-briefcase
+            %span descargar
+      .middle
+        .cp-links
+          %a.contact-link(href="#")
+            contacto
+          %a.plus-sign(href="#")
+            %i.icon
+          %a.portfolio-link(href="#")
+            portfolio
+        .title
+          %h1 Javi Obando
+          %h2 fotografía
+        .hand-down
+          %a(href='#')
+            %i.icon
+      .bottom
 
