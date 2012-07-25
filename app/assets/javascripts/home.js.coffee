@@ -34,6 +34,8 @@ animateSlide= (selector) ->
 
   return if $ss.hasClass 'moving'
 
+  #close data
+  $ss.find('li.current .img-data').removeClass 'open'
 
   $ss.find('li').removeClass 'current'
   $li.addClass 'current'
@@ -109,16 +111,16 @@ set_up_slides= ->
 
   $(slides_selector).each  (i,el)->
     $el = $(el)
-    #$el.width $el.width()
-    #$el.height $el.height()
-    height += $el.height()
+    h = $el.height()
+    height += h
     p = $el.position()
     items[i] = 
       index: i
+      height: h
       minTop: p.top
-      maxTop: p.top + $el.height()
+      maxTop: p.top + h
       el: $el #store the element
-    console.log  p.top, $el.height(), $(window).height()
+      marginTop: 0
   
     $el.css
       'z-index': 1000-i
@@ -134,14 +136,16 @@ set_up_slides= ->
 
 
 above_items = ->
-  item for item in items when item.minTop <= sTop
+  ai = active_item()
+  item for item in items when item.index < ai.index
 
 active_item = ->
   r = item for item in items when item.minTop <= sTop <= item.maxTop
   r
 
 below_items = ->
-  item for item in items when item.minTop > sTop
+  ai = active_item()
+  item for item in items when item.index > ai.index
 
 
 log= (data) ->
@@ -152,18 +156,21 @@ bind_keyboard= ->
     key = (if ev.charCode then ev.charCode else (if ev.keyCode then ev.keyCode else 0))
 
     ev.preventDefault() if 37 <= key <= 40
-    
+
     switch key
+      when 32
+        ev.preventDefault()
+        console.log item.marginTop for item in items
       when 38
         #KEY_UP
         return if above_items().length is 0
         prev = above_items()[above_items().length-1]
-        $('body,html').animate({scrollTop: prev.minTop}, 500)
+        scroll_to_item prev
       when 40
         #KEY_DOWN
         return if below_items().length is 0
         next = below_items()[0]
-        $('body,html').animate({scrollTop: next.minTop}, 500)
+        scroll_to_item next
       when 37
         #KEY_LEFT
         $li = active_item().el.find('.slideshow li.current').prev('li')
@@ -179,33 +186,56 @@ bind_hands_click= ->
   $('.hand-down a').on 'click', (ev) ->
     ev.preventDefault()
     return if below_items().length is 0
-    last = below_items()[below_items().length-1]
-    $('body,html').animate({scrollTop: last.minTop}, 500)
+    scroll_to_item below_items()[below_items().length-1]
 
   $('.hand-up a').on 'click', (ev) ->
     ev.preventDefault()
-    $('body,html').animate({scrollTop: 0}, 500)
+    scroll_to 0
+
+scroll_to_item= (item)->
+  scroll_to item.minTop
+
+scroll_to= (top)->
+  ai = active_item()
+
+  for item in items
+    if  item.index < ai.index
+      mTop = -item.height #slide is below
+    else if  item.index > ai.index
+      mTop = 0 #slide is above
+    else
+      #active slide
+      mTop = -(top-item.minTop)
+
+    item.marginTop = mTop
+    
+    #css3 transitions
+    item.el.css
+      marginTop: mTop
+
+  $('body,html').scrollTop(top)
+
 
 bind_scroll= ->
-  $(window).bind "scroll", (ev) ->
+
+  $('body').addClass 'no-scroll'
   
+  $(window).bind "scroll", (ev) ->
+
+    #$('body,html').scrollTop(0)
+    #ev.preventDefault()
+    
+    return if $('body').hasClass('scrolling')
+
+    #sets global sTop
     sTop = $(window).scrollTop()
+
+    scroll_to sTop
   
     if $('header').hasClass('portfolio-open') or $('header').hasClass('contact-open')
       close_cp(ev)
       return false
 
-    for item in items
-      if item.minTop >= sTop
-        mTop = 0 #slide is below
-      else if item.maxTop <= sTop
-        mTop = -item.height #slide is above
-      else
-        #active slide
-        mTop = -(sTop-item.minTop)
-
-      item.el.css
-        marginTop: mTop
         
         
 bind_resize= ->

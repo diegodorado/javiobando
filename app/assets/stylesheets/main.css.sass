@@ -7,19 +7,6 @@
 @import 'partials/slideshow'
 
 
-@each $i in 10 32
-  #bg#{$i} 
-    background: image-url("bg#{$i}.png") no-repeat center top
-    height: image-height("bg#{$i}.png")
-
-
-#wrapper
-  min-height: 1000px
-  width: 100%
-  margin: 0
-  padding: 0 0 50px 0
-
-
 body.home.index
   background: $white
   article
@@ -41,8 +28,7 @@ article
   left: 0
   width: 100%
   min-height: 100%
-
-
+  +box-shadow(0 6px 12px $grey1)
   &.full-bg
     width: 100%
     height: 100%

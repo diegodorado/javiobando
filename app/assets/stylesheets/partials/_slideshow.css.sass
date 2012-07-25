@@ -22,7 +22,7 @@
       cursor: pointer
       text-align: center
       .img-wrapper
-        border: 6px solid #fff
+        border: 6px solid $white
         img
           max-width: 900px
           max-height: 900px
@@ -66,7 +66,10 @@
         cursor: default
         .img-wrapper
           img
-            +opaque   
+            +opaque
+        .img-data
+          .img-data-wrapper
+            //+opaque
 
   &.ready
     +opaque
