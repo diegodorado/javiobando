@@ -8,7 +8,7 @@ default_run_options[:pty] = true
 set :repository,  "git://github.com/diegodorado/javiobando.git"
 set :scm, :git
 
-#set :application,  "guillermolema.com.ar"
+#set :application,  "javiobando.com"
 set :application,  "cooph.com.ar"
 
 server application , :app, :web, :db, :primary => true

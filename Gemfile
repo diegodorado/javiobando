@@ -12,7 +12,7 @@ gem 'paperclip', '3.0.2'
 gem "redcarpet",'2.1.0'
 
 group :production do
-  gem 'pg'
+  gem 'sqlite3'
 end
 
 group :development do
