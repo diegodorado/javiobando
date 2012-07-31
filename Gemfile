@@ -4,7 +4,12 @@ gem 'rails', '3.1.1'
 
 gem "haml",'3.1.4'
 
+gem 'rails_admin', '0.0.1'
+gem "devise", '2.0.4'
 gem 'jquery-rails'
+
+gem 'paperclip', '3.0.2'
+gem "redcarpet",'2.1.0'
 
 group :production do
   gem 'pg'

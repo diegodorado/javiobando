@@ -9,26 +9,25 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
-    %title Guillermo Lema
-    %meta{:content => "Guillermo Lema Site", :name => "description"}/
+    %title Javi Obando
+    %meta{:content => "Javi Obando Site", :name => "description"}/
     %meta{:content => "diegodorado@gmail.com", :name => "author"}/
     / Mobile viewport optimized: j.mp/bplateviewport
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
     / Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
-    = javascript_include_tag 'modernizr'
+    
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Montserrat'
+    -#= javascript_include_tag 'html5shiv'
     = stylesheet_link_tag 'application'
     = csrf_meta_tag
     
   %body{:class => body_classes.join(' ')}
-    %header
-      .container
-        =render :partial => "layouts/header"
     #content{:role => "main"}
-      .container
-        =render :partial => "layouts/alerts"
-        = yield
-    %footer
-      .container
-        =render :partial => "layouts/footer"
+      =render :partial => "layouts/alerts"
+      = yield
+
+    -#=render :partial => "layouts/ga"
+    -#=render :partial => "layouts/chrome-frame"
+    -#= javascript_include_tag 'application'

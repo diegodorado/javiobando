@@ -256,15 +256,17 @@ bind_resize= ->
 
 
 
-
+change_header= ->
+  $('header').prependTo($('article:first'))
 
 
 $ ->
+  change_header()
   set_up_slideshows()
   set_up_slides()
   bind_keyboard()
   bind_hands_click()
   bind_scroll()
-  bind_resize()
+  #bind_resize()
   
   

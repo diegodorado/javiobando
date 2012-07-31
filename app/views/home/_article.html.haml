@@ -1,141 +1,26 @@
-%article
-  .slideshow
-    %i.icon-right-arrow
-    %i.icon-left-arrow
-    %ul
-      %li
-        .img-wrapper
-          =image_tag 'img2.png', :width=> 600, :height=> 900
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img3.png', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img4.jpg', :width=> 600, :height=> 900
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img5.jpg', :width=> 600, :height=> 900
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img6.jpg', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img7.jpg', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img8.jpg', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img9.jpg', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
-      %li
-        .img-wrapper
-          =image_tag 'img10.jpg', :width=> 900, :height=> 600
-        .img-data
-          .img-data-handler
-            %i.icon
-          .img-data-wrapper
-            .top
-              %span cliente:
-              %a(href="#") titulo de la foto, argentina
-              %span estilismo:
-              %a(href="#") flora grzetic
-              %span asistente de la foto:
-              %a(href="#") mariano pizano
-            .bottom
+-case article.view_as
+  -when 'fs'
+    %article.full-bg(style="background-image: url(#{article.photos.first.image.url})")
+  -when 'ss'
+    %article
+      .slideshow
+        %i.icon-right-arrow
+        %i.icon-left-arrow
+        %ul
+          -article.photos.each do |p|
+            %li
+              .img-wrapper
+                -if p.orientation == 'pt'
+                  =image_tag p.image.url(:portrait), :size=> '900x600'
+                -else
+                  =image_tag p.image.url(:landscape), :size=> '600x900'
+              -unless p.description.blank?
+                .img-data
+                  .img-data-handler
+                    %i.icon
+                  .img-data-wrapper
+                    .top
+                      :markdown
+                        #{p.description}
+                    .bottom
 

@@ -1,0 +1,16 @@
+class Photo < ActiveRecord::Base
+  belongs_to :photoable, :polymorphic => true
+
+  validates :image, :presence => true  
+  validates :orientation, :presence => true  
+
+  has_attached_file :image, {
+      :styles => { :portrait => "900x600#", :landscape => "600x900#", :thumb => "100x100#" }
+    }
+
+
+  def orientation_enum
+    [['portrait', :pt],['landscape', :ls]]
+  end
+
+end

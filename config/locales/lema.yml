@@ -1,0 +1,41 @@
+es:
+  language_name: Español
+  specification: ficha
+  objective: objetivo
+  summary: contenido
+  categories: categorías
+
+  admin:
+    actions:
+      publish:
+        menu: "Publicar"
+      new_from_course:
+        title: "Crear Entrada desde Curso"
+        breadcrumb: "nuevo desde curso"    
+fr:
+  language_name: Français
+  specification: fiche
+  objective: objectif
+  summary: contenu
+  categories: categories
+   
+it:
+  language_name: Italiano
+  specification: scheda
+  objective: obiettivo
+  summary: contenuto
+  categories: categories
+  
+cs:
+  language_name: Čeština
+  specification: karta
+  objective: cíl
+  summary: obsah
+  categories: categories
+ 
+en:
+  language_name: English
+  specification: specification
+  objective: objective
+  summary: summary
+  categories: categories

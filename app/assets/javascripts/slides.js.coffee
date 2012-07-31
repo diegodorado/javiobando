@@ -1,24 +1,3 @@
-$ ->
-  $.Body = $("body")
-  $.Window = $(window)
-  $.Scroll = (if ($.browser.mozilla or $.browser.msie) then $("html") else $.Body)
-  #$("article").Article()
-  $.Body.Keyboard()
-
-$.Events =
-  RESIZE: "browserResize"
-  ORIENT: "browserOrientation"
-  MOBILE: "mobileInit"
-  ARTICLE_SCROLL: "articleScroll"
-  ARTICLE_NEXT: "articleNext"
-  ARTICLE_PREV: "articlePrev"
-  KEY_ESC: "keyEscape"
-  KEY_SPACE: "keySpace"
-  KEY_UP: "keyUp"
-  KEY_DOWN: "keyDown"
-  KEY_RIGHT: "keyRight"
-  KEY_LEFT: "keyLeft"
-
 
 $.fn.Article = ->
   _keynext = (e) ->
@@ -222,23 +201,3 @@ $.fn.Article = ->
   @
 
 
-
-$.fn.Keyboard = (settings) ->
-  config = {}
-  $.extend config, settings  if settings
-  @each ->
-    on_keydown = (e) ->
-      key = (if e.charCode then e.charCode else (if e.keyCode then e.keyCode else 0))
-      switch key
-        when 38
-          $.Body.triggerHandler $.Events.KEY_UP
-        when 39
-          $.Body.triggerHandler $.Events.KEY_RIGHT
-        when 40
-          $.Body.triggerHandler $.Events.KEY_DOWN
-        when 37
-          $.Body.triggerHandler $.Events.KEY_LEFT
-    $self = $(this)
-    $(document).bind "keydown", on_keydown
-
-  @

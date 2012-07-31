@@ -1,3 +1,4 @@
-%article.first.full-bg(style="background-image: url(/assets/cover.jpg)")
-=render :partial => "home/article"
-=render :partial => "home/article"
+=render :partial => "home/article",:locals => {:article => @first_article}  if @first_article
+-@articles.each do |a|
+  =render :partial => "home/article",:locals => {:article => a} 
+
