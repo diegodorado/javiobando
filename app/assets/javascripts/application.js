@@ -6,4 +6,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.mousewheel
+//= require plugins
+//= require app
+//= require slide
 //= require home

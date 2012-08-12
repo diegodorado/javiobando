@@ -5,7 +5,11 @@ class Photo < ActiveRecord::Base
   validates :orientation, :presence => true  
 
   has_attached_file :image, {
-      :styles => { :portrait => "900x600#", :landscape => "600x900#", :thumb => "100x100#" }
+      :styles => { 
+        :portrait => "900x600#", 
+        :landscape => "600x900#", 
+        :movieframe => "600x400#", 
+        :thumb => "100x100#" }
     }
 
 

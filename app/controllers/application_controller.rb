@@ -47,7 +47,11 @@ class ApplicationController < ActionController::Base
 
         field :photos do
           label "Imagenes"
+          orderable true
+          #nested_form false
         end
+
+
 
 
         edit do

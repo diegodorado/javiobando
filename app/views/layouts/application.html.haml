@@ -13,7 +13,7 @@
     %meta{:content => "Javi Obando Site", :name => "description"}/
     %meta{:content => "diegodorado@gmail.com", :name => "author"}/
     / Mobile viewport optimized: j.mp/bplateviewport
-    %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0"}
     / Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
@@ -25,9 +25,8 @@
     
   %body{:class => body_classes.join(' ')}
     =render :partial => "layouts/header"
-    #content{:role => "main"}
-      =render :partial => "layouts/alerts"
-      = yield
+    =render :partial => "layouts/alerts"
+    = yield
     =render :partial => "layouts/footer"
     -#load users and chat for all pages
     -# = app_js_load :users=> user_list, :user_id=> user_id, :chat=> true

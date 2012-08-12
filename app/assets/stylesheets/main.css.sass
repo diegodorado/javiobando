@@ -4,7 +4,9 @@
 @import 'partials/shared'
 @import 'partials/header'
 @import 'partials/footer'
+@import 'partials/fullscreen'
 @import 'partials/slideshow'
+@import 'partials/movieframes'
 
 
 body.home.index
@@ -18,28 +20,25 @@ body.home.comercial
   article
     background: $blue
 
-header, article, footer
-  +transition(margin 1.2s ease)
-
-header, footer
+.slide
   top: 0
   left: 0
   width: 100%
-
-article
-  top: 0
-  left: 0
-  width: 100%
+  position: fixed
   min-height: 100%
-  &.full-bg
-    width: 100%
-    height: 100%
-    background-size: cover
+  z-index: 1
+  &.next
+    z-index: 2
+  &.active
+    z-index: 3
 
 .img-wrapper .tag
   display: none
   
 body
+  overflow: hidden
+  width: 100%
+  height: 100%
   a
     text-decoration: none
 

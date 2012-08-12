@@ -1,8 +1,8 @@
--case article.view_as
-  -when 'fs'
-    %article.full-bg(style="background-image: url(#{article.photos.first.image.url})")
-  -when 'ss'
-    %article
+%article{:class=> article.view_as}
+  -case article.view_as
+    -when 'fs'
+      .full-bg(style="background-image: url(#{article.photos.first.image.url})")
+    -when 'ss'
       .slideshow
         %i.icon-right-arrow
         %i.icon-left-arrow
@@ -23,4 +23,8 @@
                       :markdown
                         #{p.description}
                     .bottom
-
+    -when 'mf'
+      .movieframes
+        .img-wrapper
+          -article.photos.each do |p|
+            =image_tag p.image.url(:movieframe), :size=> '600x400'
