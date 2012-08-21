@@ -19,6 +19,8 @@
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
     
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Montserrat'
+    /[if lt IE 9]
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>    
     -#= javascript_include_tag 'html5shiv'
     = stylesheet_link_tag 'application'
     = csrf_meta_tag

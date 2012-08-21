@@ -44,9 +44,10 @@ class root.Slide
       return 1
     
     #todo: return if cannot slide so much
+    console.log 'moving'
     @$el.stop().animate
       marginTop: mt
-    , 400
+    , 200
     
     return 0
 
@@ -172,12 +173,13 @@ class root.Slide
 
     animateSlide @$el.find('li:first')
 
+    total_height = @$el.find('.slideshow').height()
     #sets img margin to center them vertically
-    @$el.find('.img-wrapper').each  ->
+    @$el.find('li').each  ->
       $(@).css
-        marginTop: (900 - $(@).height())/2
+        marginTop: (total_height - $(@).height())/2
 
-    @$el.find('.slideshow').height @$el.find('.slideshow').height()
+    @$el.find('.slideshow').height total_height
 
     @$el.find('.slideshow').addClass 'ready not-played'
 

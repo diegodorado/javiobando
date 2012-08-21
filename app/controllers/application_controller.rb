@@ -47,8 +47,10 @@ class ApplicationController < ActionController::Base
 
         field :photos do
           label "Imagenes"
-          orderable true
+          #orderable true
           #nested_form false
+          #partial "form_multiple_select"
+          
         end
 
 
@@ -70,7 +72,6 @@ class ApplicationController < ActionController::Base
         end
 
         field :orientation do
-          partial "form_orientation_select"
           label 'Orientacion'
         end
         field :photoable do

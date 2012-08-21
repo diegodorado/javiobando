@@ -10,4 +10,5 @@
 //= require plugins
 //= require app
 //= require slide
+//= require contact
 //= require home

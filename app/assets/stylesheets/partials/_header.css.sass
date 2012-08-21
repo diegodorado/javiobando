@@ -10,6 +10,8 @@ header
     .top
       background: $white
       padding-top: 20px
+      height: 0
+      overflow: hidden
     .middle
       .cp-links
         background: image-url("saw-white-down.png") repeat-x center top
@@ -31,8 +33,7 @@ header
     @extend .icon-email
 
   .contact,.portfolio
-    height: 0
-    +transition(height 0.5s ease)
+    +transparent
     a
       color: $lite-blue
 
@@ -43,8 +44,6 @@ header
       margin-top: 10px
 
   .portfolio
-    height: 0
-    overflow: hidden
     text-align: center
     .pdf-link
       +inline-block
@@ -58,14 +57,9 @@ header
         font-size: 14px
         letter-spacing: 1px
         
-
   .cp-links
-    .plus-sign
+    .plus-sign .icon
       +transition(all 0.5s ease)
-
-
-  &.contact-open .contact, &.portfolio-open .portfolio
-    height: 250px
 
   &.contact-open, &.portfolio-open
     .plus-sign .icon

@@ -4,6 +4,8 @@ class Photo < ActiveRecord::Base
   validates :image, :presence => true  
   validates :orientation, :presence => true  
 
+  delegate :url, :to => :image
+
   has_attached_file :image, {
       :styles => { 
         :portrait => "900x600#", 
@@ -16,5 +18,9 @@ class Photo < ActiveRecord::Base
   def orientation_enum
     [['portrait', :pt],['landscape', :ls]]
   end
+
+  #def name
+  #  url(:thumb)
+  #end
 
 end

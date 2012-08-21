@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120731065523) do
+ActiveRecord::Schema.define(:version => 20120820173911) do
 
   create_table "articles", :force => true do |t|
     t.string   "section"
     t.string   "view_as"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "published_at"
   end
 
   create_table "photos", :force => true do |t|
