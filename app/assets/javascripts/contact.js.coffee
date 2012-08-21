@@ -1,8 +1,14 @@
 root = exports ? window
 
 class root.Contact
+  height: 240
+  speed: 300
+  constructor: (@$el, @personal)->
 
-  constructor: (@$el, @comercial)->
+    if @personal
+      @$first = $('article:first') 
+    else
+      @$first = $('') #nothing
 
     @$el.on 'click','.cp-links a', (ev) =>
       ev.preventDefault()
@@ -12,18 +18,19 @@ class root.Contact
         if @contact()
           @close()
         else
-          @open_contact()
+          @show 'contact'
+
       if $t.hasClass 'portfolio-link'
         if @portfolio()
           @close()
         else
-          @open_portfolio()
+          @show 'portfolio'
+
       if $t.hasClass 'plus-sign'
         if @closed()
-          @open_contact()
+          @show 'contact'
         else
           @close()
-
 
 
   contact: ->
@@ -34,52 +41,38 @@ class root.Contact
 
   closed: ->
     not (@contact() or @portfolio())
-
-      @activeSlide().snapTop =>
-        @active_index = first
-        if @activeSlide().transparent
-          @slides[@active_index+1].slideDown =>
-            @activeSlide().slideDown =>
-              @swaping = false
-              s.slideDownQuiet() for s in @slides
-
-  hide: ->
-    return
-    
+ 
   close: ->
-    @$el.removeClass()
-    @$el.find('.top').animate
-      height: 0
+    @$el.find('.contact, .portfolio').animate
+      opacity: 0
+    ,@speed, =>
+      @$el.removeClass()
+      @$first.animate
+        marginTop: 0
+      ,@speed
+      @$el.find('.top').animate
+        height: 0
+      ,@speed
 
-  open_contact: ->
-    @$el.addClass 'contact-open'
-    @$el.find('.top').animate
-      height: 300
-
-
-  open_portfolio: ->
-    @$el.addClass 'contact-open'
-    @$el.find('.top').animate
-      height: 300
-
-
+  show: (witch)->
+    if @closed()
+      @$el.addClass "#{witch}-open"
+      @$first.animate
+        marginTop: @height
+      ,@speed
+      @$el.find('.top').animate
+        height: @height
+      ,@speed, =>
+        @$el.find(".#{witch}").animate
+          opacity: 1
+        ,@speed
+    else
+      @$el.find('.contact, .portfolio').animate
+        opacity: 0
+      ,@speed, =>
+        @$el.removeClass().addClass "#{witch}-open"
+        @$el.find(".#{witch}").animate
+          opacity: 1
+        ,@speed
   
-close_cp= (e)->
-  e.preventDefault()
-  $('header').removeClass
-  $('article:first').css
-    marginTop: 0
-  cp_closed = true
 
-test = ->
-  $('.cp-links .contact-link').bind 'click', (e) ->
-    close_cp(e)
-    $('article:first').css
-      marginTop: 220
-    cp_closed = false
-  $('.portfolio-link').bind 'click', (e) ->
-    close_cp(e)
-    $('header').addClass 'portfolio-open'
-    $('article:first').css
-      marginTop: 220
-    cp_closed = false

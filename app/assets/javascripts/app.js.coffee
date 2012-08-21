@@ -19,7 +19,7 @@ class root.App
     @bind_scroll()
     @setup_slides()
     @bind_and_trigger_resize()
-    @contact = new Contact $('header'), $('body').hasClass 'comercial'
+    @contact = new Contact $('header'), $('body.home.index').size() > 0
 
 
 
