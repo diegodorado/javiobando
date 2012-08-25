@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888174.8335943:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%17a2afd6fc06e8bc3fc93a95f053082eI"logical_path;
+FI"icon/hand-up-white.png;
+FI"pathname;
+FI"3$root/app/assets/images/icon/hand-up-white.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-08-23T01:06:46-06:00;
+FI"length;
+FI"443;
+FI"digest;
+F"%7c47bb71cbed73a25770d99295418e11I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

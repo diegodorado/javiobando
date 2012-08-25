@@ -1,0 +1,8 @@
+-if current_page?(root_path)
+  %a.tab-link{:href=>comercial_path}
+    %span comercial
+    %i.icon-tab
+-else
+  %a.tab-link{:href=>root_path}
+    %span personal
+    %i.icon-tab

@@ -1,7 +1,6 @@
 #require "bundler/capistrano"
 
-#ssh_options[:auth_methods] = ["publickey"]
-#ssh_options[:keys] = ["~/.ssh/common_rsa"]
+ssh_options[:forward_agent] = true
 
 default_run_options[:pty] = true
 

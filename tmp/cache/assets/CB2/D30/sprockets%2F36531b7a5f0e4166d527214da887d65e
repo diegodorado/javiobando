@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888175.1467667:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%bf908f50b68996f400c3bf73be79e572I"logical_path;
+FI"icon/plus-sign2-white.png;
+FI"pathname;
+FI"6$root/app/assets/images/icon/plus-sign2-white.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-08-23T01:06:46-06:00;
+FI"length;
+FI"563;
+FI"digest;
+F"%2b6aba5d7f0ae06e1411badc4cc10341I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

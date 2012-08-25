@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345890193.7840679:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%5d3030f628f192391afde3cea7678f5eI"logical_path;
+FI"login-bg.jpg;
+TI"pathname;
+FI")$root/app/assets/images/login-bg.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-08-23T01:06:46-06:00;
+FI"length;
+FI"1102153;
+FI"digest;
+F"%2c777180a0e0a9a990903e9da3d26511I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

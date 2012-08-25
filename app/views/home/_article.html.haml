@@ -1,7 +1,8 @@
 %article{:class=> article.view_as}
   -case article.view_as
     -when 'fs'
-      .full-bg(style="background-image: url(#{article.photos.first.image.url})")
+      .fullscreen
+        =image_tag article.photos.first.image.url(:portrait)
     -when 'ss'
       .slideshow
         %i.icon-right-arrow

@@ -1,0 +1,68 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345890279.474772:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%0b7fa4ce62c118ce627399c57cad60bcI"logical_path;
+FI"jquery.autogrow.js;
+FI"pathname;
+FI"7$root/vendor/assets/javascripts/jquery.autogrow.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-08-23T01:06:46-06:00;
+FI"	body;
+FI"œ(function($) {
+
+  /*
+   * Auto-growing textareas; technique ripped from Facebook
+   */
+  $.fn.autogrow = function(options) {
+      
+    this.filter('textarea').each(function() {
+
+      if ($(this).data('autogrowed')) return ;
+      var pre = $('<pre></pre>').css({
+          display:   'none',
+          margin: 0,
+          padding: 0,
+          'white-space': 'pre-wrap',
+          'word-wrap': 'break-word',
+          'word-break': 'inherit',
+          width:      $(this).width(),
+          fontSize:   $(this).css('fontSize'),
+          fontFamily: $(this).css('fontFamily'),
+          lineHeight: $(this).css('lineHeight')
+      }).appendTo(document.body);
+      
+      var update = function() {
+          pre.html(this.value+' ');
+          $(this).css('height', pre.height());
+      }
+      
+	    $(this).bind('update blur keyup change cut paste', update);
+
+	    // And this line is to catch the browser paste event
+	    $(this).bind('input paste',function(e){ var that = this;setTimeout( function(){update.apply(that);}, 250); });				
+      $(this).data('autogrowed',true);
+	    $(this).trigger('update');
+        
+    });
+    
+    return this;
+      
+  }
+  
+})(jQuery);
+;
+FI"asset_paths;
+F[I"7$root/vendor/assets/javascripts/jquery.autogrow.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"7$root/vendor/assets/javascripts/jquery.autogrow.js;
+FI"
+mtime;
+FIu:	Timeç€‡è
+:@_zoneI"CST;
+T:nano_numi¾:nano_deni:submicro"D`:offsetiþ «I"hexdigest;
+F"%49c7d7f66fd2ce42affcc88267de6771I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

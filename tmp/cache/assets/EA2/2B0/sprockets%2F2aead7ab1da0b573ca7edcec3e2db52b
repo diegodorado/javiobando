@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888174.778915:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%c49a10145ea95b0b417361160119c202I"logical_path;
+FI"icon/hand-down-white.png;
+FI"pathname;
+FI"5$root/app/assets/images/icon/hand-down-white.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-08-23T01:06:46-06:00;
+FI"length;
+FI"435;
+FI"digest;
+F"%8db4b7113ed0716f441c6f15c8d9a27aI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

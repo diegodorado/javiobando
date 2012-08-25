@@ -1,12 +1,5 @@
 %header
-  -if current_page?(root_path)
-    %a#header-tab{:href=>comercial_path}
-      %span comercial
-      %i.icon-tab
-  -else
-    %a#header-tab{:href=>root_path}
-      %span personal
-      %i.icon-tab
+  =render :partial => "layouts/tab-link"
   .inner
     #header-arrows
       %i.icon-arrows 
@@ -16,14 +9,14 @@
           %i.icon
         .emails
           %span.label personal:
-          %a(href='#') javi@onthecorner.com.ar
+          %a(href='mailto:javi@onthecorner.com.ar') javi@onthecorner.com.ar
           %br
           %span.label comercial:
-          %a(href='#') quiero@hellocrudo.com
+          %a(href='mailto:quiero@hellocrudo.com') quiero@hellocrudo.com
         .links
-          %a(href='#') www.javiobando.tumblr.com
+          %a(href='http://www.javiobando.tumblr.com') www.javiobando.tumblr.com
           %br
-          %a(href='#') www.onthecorner.com.ar
+          %a(href='http://www.onthecorner.com.ar') www.onthecorner.com.ar
       .portfolio
         %a.pdf-link(href='#')
           %i.icon-briefcase

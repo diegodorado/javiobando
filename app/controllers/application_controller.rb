@@ -39,11 +39,11 @@ class ApplicationController < ActionController::Base
         field :view_as, :enum do
           label 'Ver como'
         end
-        #field :published_at, :date do
-        #  date_format :simple
-        #  label "Publicado el"
-        #  group :default
-        #end
+        field :published_at, :date do
+          date_format :default
+          label "Publicado el"
+          group :default
+        end
 
         field :photos do
           label "Imagenes"

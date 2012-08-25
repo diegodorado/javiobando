@@ -8,6 +8,7 @@ class Photo < ActiveRecord::Base
 
   has_attached_file :image, {
       :styles => { 
+        :original => "900x", 
         :portrait => "900x600#", 
         :landscape => "600x900#", 
         :movieframe => "600x400#", 
@@ -18,9 +19,5 @@ class Photo < ActiveRecord::Base
   def orientation_enum
     [['portrait', :pt],['landscape', :ls]]
   end
-
-  #def name
-  #  url(:thumb)
-  #end
 
 end

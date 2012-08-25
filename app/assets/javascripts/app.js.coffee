@@ -6,7 +6,7 @@ root = exports ? window
 class root.App
 
   active_index: 0
-  debug: true
+  debug: false
   slides: []
   swaping: false
   
@@ -40,9 +40,13 @@ class root.App
     @window.on "keydown", (ev) =>
       key = (if ev.charCode then ev.charCode else (if ev.keyCode then ev.keyCode else 0))
       ev.preventDefault() if 35 <= key <= 40
-      if key in [96..105]
-        @active_index = key-96
-        @log @slides[@active_index]
+
+      if @isFirst()
+        unless @contact.closed() 
+          @contact.close() 
+          return
+
+
       switch key
         when 35 then @moveLast()            #FIN
         when 36 then @moveFirst()           #INICIO
@@ -70,7 +74,7 @@ class root.App
         wh = @window.height()
         s.setHeight(wh) for s in @slides
         #.... not very pretty....
-        $('body.home.index header .inner .middle').height wh - 20
+        $('body.home.index header .inner .middle').height wh - 20 - 6
       ), 250
     ).trigger 'resize'
 
@@ -93,11 +97,18 @@ class root.App
   activeSlide: ->
     @slides[@active_index]
 
+  isFirst: ->
+    @active_index is 0
 
   #move functions
   scroll: (delta)->
     return if @swaping
     
+    if @isFirst()
+      unless @contact.closed() 
+        @contact.close() 
+        return
+
     r = @activeSlide().scroll(delta)
     if r > 0
       @moveNext()

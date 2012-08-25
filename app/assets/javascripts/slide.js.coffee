@@ -16,7 +16,9 @@ class root.Slide
     
     @set_up_slideshow() if @slideshow
     @set_up_movieframes() if @movieframe
-    
+    @set_up_fullscreen() if @fullscreen
+
+
   setHeight: (@minHeight)->
     @height = @$el.height()
 
@@ -83,24 +85,22 @@ class root.Slide
 
 
 
+  set_up_fullscreen: ->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    aspectRatio = 900/600
+    console.log aspectRatio
+    $(window).resize(=>
+      wh = $(window).height()
+      ww = $(window).width()
+      @$el.find('.fullscreen').toggleClass "tall", (ww/wh) < aspectRatio
+      top = (wh - ww/aspectRatio)/2
+      top = 0 if top > 0
+      left = (ww - wh*aspectRatio)/2
+      left = 0 if left > 0
+      @$el.find('.fullscreen img').css
+        top: top
+        left: left
+    ).trigger "resize"
 
 
 

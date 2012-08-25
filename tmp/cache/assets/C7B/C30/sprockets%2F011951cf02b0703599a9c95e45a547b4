@@ -1,0 +1,123 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888277.8225603:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%cc3cafc3868c5435196f7b1d528a1e20I"logical_path;
+FI"devise.css;
+FI"pathname;
+FI"1$root/app/assets/stylesheets/devise.css.sass;
+FI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2012-08-23T23:58:27-06:00;
+FI"	body;
+FI"
+/* line 23, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 15, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+/* line 19, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 5, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+html {
+  height: 100%;
+}
+
+/* line 7, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new {
+  height: 100%;
+}
+/* line 9, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content {
+  font-family: Montserrat;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background: url("login-bg.jpg");
+  background-size: cover;
+}
+/* line 17, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content .alert {
+  width: 800px;
+  margin: 20px auto;
+  background: #288278;
+  color: white;
+  padding: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 24, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content .alert .close {
+  display: none;
+}
+/* line 27, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 1px 25px black;
+  -moz-box-shadow: 0px 1px 25px black;
+  box-shadow: 0px 1px 25px black;
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -125px 0 0 -135px;
+  padding: 25px;
+  color: #666666;
+}
+/* line 42, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash h2 {
+  font-family: Lora;
+  font-style: italic;
+  font-size: 31px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 48, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash h2, body.sessions.new #content #splash label {
+  color: #eeeeee;
+  font-weight: bold;
+}
+/* line 51, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash input.btn {
+  margin-top: 10px;
+}
+;
+FI"asset_paths;
+F[I"1$root/app/assets/stylesheets/devise.css.sass;
+FI"dependency_paths;
+F[{I"	path;
+FI"1$root/app/assets/stylesheets/devise.css.sass;
+FI"
+mtime;
+FIu:	TimeÁÄ‰Ê
+:@_zoneI"CST;
+T:nano_numi;:nano_deni:submicro"@:offseti˛†´I"hexdigest;
+F"%5e5d8d379ca14aa0b593391625db9be7{I"	path;
+FI"9$root/app/assets/stylesheets/partials/_base.css.sass;
+FI"
+mtime;
+FIu;ÁÄ‰Ê
+;I"CST;
+T;i;;i;"@;i˛†´I"hexdigest;
+F"%ec34efff551594bf997e6c4a18af8568{I"	path;
+FI"u/home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss;
+FI"
+mtime;
+FIu;ÄáùªÈ
+;I"CST;
+T;i^;i;"``;i˛†´I"hexdigest;
+F"%5caae416107f31a7b0c83ee7af65fa6fI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c
