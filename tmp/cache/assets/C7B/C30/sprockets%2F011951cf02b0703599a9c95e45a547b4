@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888277.8225603:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346002339.7139144:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%cc3cafc3868c5435196f7b1d528a1e20I"logical_path;
+F"%0c1d4de1c69586753eb1f2ce1001647fI"logical_path;
 FI"devise.css;
 FI"pathname;
 FI"1$root/app/assets/stylesheets/devise.css.sass;
@@ -9,9 +9,9 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-08-23T23:58:27-06:00;
+FI"2012-08-26T11:31:49-06:00;
 FI"	body;
-FI"
+FI"¤
 /* line 23, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .clearfix {
   *zoom: 1;
@@ -91,6 +91,10 @@ body.sessions.new #content #splash h2, body.sessions.new #content #splash label 
   font-weight: bold;
 }
 /* line 51, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash input.span2 {
+  width: 100%;
+}
+/* line 53, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
 body.sessions.new #content #splash input.btn {
   margin-top: 10px;
 }
@@ -102,10 +106,10 @@ F[{I"	path;
 FI"1$root/app/assets/stylesheets/devise.css.sass;
 FI"
 mtime;
-FIu:	Timeç€äæ
+FIu:	TimeQ€À¨
 :@_zoneI"CST;
-T:nano_numi;:nano_deni:submicro"@:offsetiþ «I"hexdigest;
-F"%5e5d8d379ca14aa0b593391625db9be7{I"	path;
+T:nano_numi‡:nano_deni:submicro"P:offsetiþ «I"hexdigest;
+F"%6d66bbc656c2cef2b7a7430f26db75a9{I"	path;
 FI"9$root/app/assets/stylesheets/partials/_base.css.sass;
 FI"
 mtime;

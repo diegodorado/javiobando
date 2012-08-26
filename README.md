@@ -5,4 +5,4 @@ Consideraciones generales:
 
 - Rollovers: que pasen al color correspondiente con una animación de fundido.
 
-
+francisco.andrade.nebendahl@galileo.edu

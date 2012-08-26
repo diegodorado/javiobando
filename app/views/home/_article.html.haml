@@ -15,15 +15,14 @@
                   =image_tag p.image.url(:portrait), :size=> '900x600'
                 -else
                   =image_tag p.image.url(:landscape), :size=> '600x900'
-              -unless p.description.blank?
-                .img-data
-                  .img-data-handler
-                    %i.icon
-                  .img-data-wrapper
-                    .top
-                      :markdown
-                        #{p.description}
-                    .bottom
+              .img-data{:class=> ('hidden' if p.description.blank?)}
+                .img-data-handler
+                  %i.icon
+                .img-data-wrapper
+                  .top
+                    :markdown
+                      #{p.description}
+                  .bottom
     -when 'mf'
       .movieframes
         .img-wrapper

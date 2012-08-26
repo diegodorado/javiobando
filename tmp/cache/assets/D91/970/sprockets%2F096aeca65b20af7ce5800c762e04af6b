@@ -1,12 +1,14 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345891942.084082:@value{	I"length:EFi^I"digest;
-F"%284c3cefadc440b89d3cd565338a8128I"source;
-FI"^(function() {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345962922.7735534:@value{	I"length:EFijI"digest;
+F"%1946405e6edc508bccc574d898de1f90I"source;
+FI"j(function() {
   var root;
 
   root = typeof exports !== "undefined" && exports !== null ? exports : window;
 
   root.Slide = (function() {
     var animateSlide;
+
+    Slide.prototype.speed = 700;
 
     function Slide($el, index) {
       this.$el = $el;
@@ -63,10 +65,9 @@ FI"^(function() {
       if (mt < -(this.height - 100) && delta < 0) {
         return 1;
       }
-      console.log('moving');
       this.$el.stop().animate({
         marginTop: mt
-      }, 200);
+      }, this.speed / 2);
       return 0;
     };
 
@@ -85,32 +86,31 @@ FI"^(function() {
     Slide.prototype.snapTop = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.snapBottom = function(callback) {
       return this.$el.animate({
         marginTop: -(this.height - this.minHeight)
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideUp = function(callback) {
       return this.$el.animate({
         marginTop: -this.height
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideDown = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.set_up_fullscreen = function() {
       var aspectRatio,
         _this = this;
       aspectRatio = 900 / 600;
-      console.log(aspectRatio);
       return $(window).resize(function() {
         var left, top, wh, ww;
         wh = $(window).height();
@@ -235,4 +235,4 @@ FI"^(function() {
 }).call(this);
 ;
 FI"_version;
-F"%6b67a3ed09292738b42487f13c887898
+F"%2d15f2baa2d44654d3f18aac48e46962

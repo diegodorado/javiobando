@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345892880.761728:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346003382.7739806:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%1e81e3792aaf562be294f711692399c6I"logical_path;
+F"%f5b68c0e3166b6ba40b017d3456238eeI"logical_path;
 FI"main.css;
 FI"pathname;
 FI"/$root/app/assets/stylesheets/main.css.sass;
@@ -9,9 +9,9 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-08-25T05:04:22-06:00;
+FI"2012-08-26T11:47:49-06:00;
 FI"	body;
-FI"’/* line 17, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+FI"ë’/* line 17, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -781,29 +781,34 @@ article.fs .fullscreen.tall img {
   opacity: 1;
 }
 /* line 65, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+.slideshow ul li .img-data.hidden {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 67, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow ul li.current {
   cursor: default;
 }
-/* line 68, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 70, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow ul li.current .img-wrapper img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 74, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 76, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.ready {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 76, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 78, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.ready ul {
   position: absolute;
   overflow: visible;
 }
-/* line 79, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 81, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.ready ul .img-data-wrapper {
   display: none;
 }
-/* line 82, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 84, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.moving .icon-right-arrow, .slideshow.moving .icon-left-arrow {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -813,15 +818,15 @@ article.fs .fullscreen.tall img {
   -o-transition: none;
   transition: none;
 }
-/* line 86, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 88, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.first .icon-left-arrow {
   display: none;
 }
-/* line 89, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 91, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.last .icon-right-arrow {
   display: none;
 }
-/* line 92, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 94, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.first li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -831,45 +836,45 @@ article.fs .fullscreen.tall img {
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
-/* line 95, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 97, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.first li.current {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 98, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 100, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 .slideshow.first.next-hover li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 103, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 105, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.index .slideshow .img-wrapper {
   -webkit-box-shadow: 2px 2px 5px 5px #d1d5d8;
   -moz-box-shadow: 2px 2px 5px 5px #d1d5d8;
   box-shadow: 2px 2px 5px 5px #d1d5d8;
 }
-/* line 108, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 110, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.index .slideshow .img-data span {
   color: #2e3d4a;
 }
-/* line 110, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 112, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.index .slideshow .img-data a {
   color: #c5c7c9;
 }
-/* line 112, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 114, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.index .slideshow .img-data .img-data-handler, body.home.index .slideshow .img-data .img-data-wrapper .top {
   border-color: #c1c3c5;
 }
 
-/* line 123, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 125, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.comercial .slideshow .img-data span {
   color: #bababa;
 }
-/* line 125, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 127, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.comercial .slideshow .img-data a {
   color: #fcfcfc;
 }
-/* line 127, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
+/* line 129, /home/diego/proyectos/javiobando/app/assets/stylesheets/partials/_slideshow.css.sass */
 body.home.comercial .slideshow .img-data .img-data-handler, body.home.comercial .slideshow .img-data .img-data-wrapper .top {
   border-color: #f5f5f5;
 }
@@ -1018,10 +1023,10 @@ F"%518b19fd74aa41cbfe857ce8e22aa126{I"	path;
 FI">$root/app/assets/stylesheets/partials/_slideshow.css.sass;
 FI"
 mtime;
-FIu;ç€äæ
+FIu;Q€ü¿
 ;I"CST;
-T;i;;i;"@;iþ «I"hexdigest;
-F"%fba54e27a70b161a49ee8b23591a7bcb{I"	path;
+T;iË;i;" 0;iþ «I"hexdigest;
+F"%57a2f2c29c473aa4b0e93c1381414fc5{I"	path;
 FI"@$root/app/assets/stylesheets/partials/_movieframes.css.sass;
 FI"
 mtime;

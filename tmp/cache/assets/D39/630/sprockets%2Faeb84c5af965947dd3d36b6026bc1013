@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345891941.8824449:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345962922.673102:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%6b67a3ed09292738b42487f13c887898I"logical_path;
+F"%2d15f2baa2d44654d3f18aac48e46962I"logical_path;
 FI"slide.js;
 FI"pathname;
 FI"1$root/app/assets/javascripts/slide.js.coffee;
@@ -9,15 +9,17 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-08-25T04:52:14-06:00;
+FI"2012-08-26T00:35:17-06:00;
 FI"	body;
-FI"^(function() {
+FI"j(function() {
   var root;
 
   root = typeof exports !== "undefined" && exports !== null ? exports : window;
 
   root.Slide = (function() {
     var animateSlide;
+
+    Slide.prototype.speed = 700;
 
     function Slide($el, index) {
       this.$el = $el;
@@ -74,10 +76,9 @@ FI"^(function() {
       if (mt < -(this.height - 100) && delta < 0) {
         return 1;
       }
-      console.log('moving');
       this.$el.stop().animate({
         marginTop: mt
-      }, 200);
+      }, this.speed / 2);
       return 0;
     };
 
@@ -96,32 +97,31 @@ FI"^(function() {
     Slide.prototype.snapTop = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.snapBottom = function(callback) {
       return this.$el.animate({
         marginTop: -(this.height - this.minHeight)
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideUp = function(callback) {
       return this.$el.animate({
         marginTop: -this.height
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideDown = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.set_up_fullscreen = function() {
       var aspectRatio,
         _this = this;
       aspectRatio = 900 / 600;
-      console.log(aspectRatio);
       return $(window).resize(function() {
         var left, top, wh, ww;
         wh = $(window).height();
@@ -252,8 +252,8 @@ F[{I"	path;
 FI"1$root/app/assets/javascripts/slide.js.coffee;
 FI"
 mtime;
-FIu:	Time*Ä>éÍ–
+FIu:	TimeFÄÓOç
 :@_zoneI"CST;
-T:nano_numiË:nano_deni:submicro"HÄ:offseti˛†´I"hexdigest;
-F"%b4fe422d96e880ce68c2b7ec71197bb2I"_version;
+T:nano_numiD:nano_deni:submicro"É`:offseti˛†´I"hexdigest;
+F"%f29da232ef1e7c599da088f78c7b77c9I"_version;
 F"%0868aba5d4b750d3a9421721ea3d9b9c

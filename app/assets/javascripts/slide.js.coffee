@@ -3,7 +3,7 @@ root = exports ? window
 #slide class
 
 class root.Slide
-
+  speed: 700
   constructor: (@$el, @index)->
     @$el.addClass 'slide'
     @$el.css 'z-index', 10000 - @index
@@ -46,10 +46,10 @@ class root.Slide
       return 1
     
     #todo: return if cannot slide so much
-    console.log 'moving'
+
     @$el.stop().animate
       marginTop: mt
-    , 200
+    , @speed/2
     
     return 0
 
@@ -65,30 +65,30 @@ class root.Slide
   snapTop: (callback)->
     @$el.animate
       marginTop: 0
-    , 400, callback
+    , @speed, callback
 
   snapBottom: (callback)->
     @$el.animate
       marginTop: -(@height-@minHeight)
-    , 400, callback
+    , @speed, callback
 
   slideUp: (callback)->
     @$el.animate
       marginTop: -@height
-    , 400, callback
+    , @speed, callback
     
 
   slideDown: (callback)->
     @$el.animate
       marginTop: 0
-    , 400, callback
+    , @speed, callback
 
 
 
   set_up_fullscreen: ->
 
     aspectRatio = 900/600
-    console.log aspectRatio
+
     $(window).resize(=>
       wh = $(window).height()
       ww = $(window).width()

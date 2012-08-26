@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888277.8651674:@value{	I"length:EFi
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346002339.746652:@value{	I"length:EFi¤
 I"digest;
-F"%71f90d8e14582c8d2bafc2352967f7ecI"source;
-FI"
+F"%f3ab5d3d6fe85d8cbac57ef13f24cedcI"source;
+FI"¤
 /* line 23, /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .clearfix {
   *zoom: 1;
@@ -81,9 +81,13 @@ body.sessions.new #content #splash h2, body.sessions.new #content #splash label 
   font-weight: bold;
 }
 /* line 51, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
+body.sessions.new #content #splash input.span2 {
+  width: 100%;
+}
+/* line 53, /home/diego/proyectos/javiobando/app/assets/stylesheets/devise.css.sass */
 body.sessions.new #content #splash input.btn {
   margin-top: 10px;
 }
 ;
 FI"_version;
-F"%cc3cafc3868c5435196f7b1d528a1e20
+F"%0c1d4de1c69586753eb1f2ce1001647f

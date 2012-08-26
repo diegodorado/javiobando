@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345892050.0523798:@value{	I"length:EFiªYI"digest;
-F"%18aea8ce4781ca1b54de34e1f95a91bbI"source;
-FI"ªY/*!
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345962922.7817297:@value{	I"length:EFi¶YI"digest;
+F"%1a8a034088e937778b02cd49e1765aa1I"source;
+FI"¶Y/*!
  * jQuery JavaScript Library v1.7.1
  * http://jquery.com/
  *
@@ -10049,6 +10049,8 @@ div = null;
   root.Slide = (function() {
     var animateSlide;
 
+    Slide.prototype.speed = 700;
+
     function Slide($el, index) {
       this.$el = $el;
       this.index = index;
@@ -10104,10 +10106,9 @@ div = null;
       if (mt < -(this.height - 100) && delta < 0) {
         return 1;
       }
-      console.log('moving');
       this.$el.stop().animate({
         marginTop: mt
-      }, 200);
+      }, this.speed / 2);
       return 0;
     };
 
@@ -10126,32 +10127,31 @@ div = null;
     Slide.prototype.snapTop = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.snapBottom = function(callback) {
       return this.$el.animate({
         marginTop: -(this.height - this.minHeight)
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideUp = function(callback) {
       return this.$el.animate({
         marginTop: -this.height
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.slideDown = function(callback) {
       return this.$el.animate({
         marginTop: 0
-      }, 400, callback);
+      }, this.speed, callback);
     };
 
     Slide.prototype.set_up_fullscreen = function() {
       var aspectRatio,
         _this = this;
       aspectRatio = 900 / 600;
-      console.log(aspectRatio);
       return $(window).resize(function() {
         var left, top, wh, ww;
         wh = $(window).height();
@@ -10398,4 +10398,4 @@ div = null;
 ;
 ;
 FI"_version;
-F"%2f3d0a0e9da506edc8d4d8eaa6b1c1ff
+F"%379e739dc4fb6ef1cf0deab86ed35078
