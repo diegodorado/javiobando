@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888174.6719775:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%bac4566e9ee21e250c5abe0403de4af1I"logical_path;
-FI"icon/email-white.png;
-FI"pathname;
-FI"1$root/app/assets/images/icon/email-white.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-08-23T01:06:46-06:00;
-FI"length;
-FI"601;
-FI"digest;
-F"%f41be03264c6bec6e5535e10cab64df7I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

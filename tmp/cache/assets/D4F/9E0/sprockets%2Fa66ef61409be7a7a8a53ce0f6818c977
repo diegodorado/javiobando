@@ -1,47 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888282.1943746:@value{	I"length:EFiéI"digest;
-F"%93acb3df51903e905d19b817ecf0c405I"source;
-FI"évar div = document.createElement('div');
-var support = {};
-
-function getVendorPropertyName(prop) {
-  var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
-  var prop_ = prop.charAt(0).toUpperCase() + prop.substr(1);
-
-  if (prop in div.style) { return prop; }
-
-  for (var i=0; i<prefixes.length; ++i) {
-    var vendorProp = prefixes[i] + prop_;
-    if (vendorProp in div.style) { return vendorProp; }
-  }
-}
-
-function checkTransform3dSupport() {
-  div.style[support.transform] = '';
-  div.style[support.transform] = 'rotateY(90deg)';
-  return div.style[support.transform] !== '';
-}
-
-var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-
-var eventNames = {
-  'MozTransition':    'transitionend',
-  'OTransition':      'oTransitionEnd',
-  'WebkitTransition': 'webkitTransitionEnd',
-  'msTransition':     'MSTransitionEnd'
-};
-
-support.transition      = getVendorPropertyName('transition');
-support.transitionDelay = getVendorPropertyName('transitionDelay');
-support.transform       = getVendorPropertyName('transform');
-support.transformOrigin = getVendorPropertyName('transformOrigin');
-support.transform3d     = checkTransform3dSupport();
-support.transitionEnd = eventNames[support.transition] || null;
-
-$.extend($.support, support);
-
-
-
-div = null;
-;
-FI"_version;
-F"%16fb140086e5734321d255eac1e5618e

@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345890294.1413195:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%0cfdbece7fde063c270662c12bed3595I"logical_path;
-FI"saw-dark-down.png;
-TI"pathname;
-FI".$root/app/assets/images/saw-dark-down.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-08-23T01:06:46-06:00;
-FI"length;
-FI"292;
-FI"digest;
-F"%7ca0b219d4371d6679bd836e3f806d80I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888174.5296478:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%d64da9b0f156ce5a80482b0c1fc67360I"logical_path;
-FI"icon/design-logo2.png;
-FI"pathname;
-FI"2$root/app/assets/images/icon/design-logo2.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-08-23T01:06:46-06:00;
-FI"length;
-FI"905;
-FI"digest;
-F"%e9af60a19e3ee68898951f5457dd12a9I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

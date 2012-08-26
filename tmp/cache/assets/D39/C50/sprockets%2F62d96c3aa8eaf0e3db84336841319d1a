@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888175.322419:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%774722569391a56dfa3dd666eef999f1I"logical_path;
-FI"icon/right-arrow.png;
-FI"pathname;
-FI"1$root/app/assets/images/icon/right-arrow.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-08-23T01:06:46-06:00;
-FI"length;
-FI"365;
-FI"digest;
-F"%d1c5527e737137533459bfc8e1edd2efI"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

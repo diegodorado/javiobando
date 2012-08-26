@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345888203.5057511:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%e3cef22c049655b3ecd6f49e50ea911cI"logical_path;
-FI"saw-white-down.png;
-TI"pathname;
-FI"/$root/app/assets/images/saw-white-down.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-08-23T01:06:46-06:00;
-FI"length;
-FI"262;
-FI"digest;
-F"%1cbd5e906d33b07c7c0e011f1f16470eI"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

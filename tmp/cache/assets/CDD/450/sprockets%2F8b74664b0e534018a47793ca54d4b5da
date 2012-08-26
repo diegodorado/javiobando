@@ -1,106 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1345890279.4913337:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%d235ff506a416e132b2a55d42185bc6fI"logical_path;
-FI"admin.js;
-TI"pathname;
-FI"1$root/app/assets/javascripts/admin.js.coffee;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-08-23T23:58:27-06:00;
-FI"	body;
-FI"æ(function() {
-
-  window.init_textarea = function() {
-    return $(function() {
-      $("textarea:not(.editor-body)").width($("textarea:visible").next('.live-preview').width());
-      $("textarea:not(.editor-body)").autogrow();
-      return $("textarea:not(.editor-body)").markdownEditor();
-    });
-  };
-
-  $(function() {
-    return $("#markdown-editor-dialog").on("click", ".btn-primary", function(e) {
-      var dialog, link, title, url;
-      e.preventDefault();
-      dialog = $("#markdown-editor-dialog");
-      title = dialog.find(".title").val();
-      url = dialog.find(".url").val();
-      if (url && title) {
-        link = "[" + title + "](" + url + ")";
-        dialog.find(".title").val('');
-        dialog.find(".url").val('');
-        $.markdownEditor.executeAction(dialog.data("editor"), /([\s\S]*)/, link);
-      }
-      return dialog.modal('hide');
-    });
-  });
-
-  $(function() {
-    return 'do nothing0';
-    $('#article_view_as + .filtering-select > .ra-filtering-select-input').on('change', function(ev) {
-      return $(this).closest('fieldset').removeClass().addClass($('#article_view_as').val());
-    }).trigger('change');
-    return $("#selectable").selectable({
-      stop: function() {
-        var result;
-        result = $("#select-result").empty();
-        return $(".ui-selected", this).each(function() {
-          var index;
-          index = $("#selectable li").index(this);
-          return result.append(" #" + (index + 1));
-        });
-      }
-    });
-  });
-
-}).call(this);
-;
-TI"asset_paths;
-F[
-I"0$root/vendor/assets/javascripts/showdown.js;
-FI"7$root/vendor/assets/javascripts/markdown-editor.js;
-FI"7$root/vendor/assets/javascripts/jquery.autogrow.js;
-FI"q/home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/javascripts/bootstrap-modal.js;
-FI"1$root/app/assets/javascripts/admin.js.coffee;
-FI"dependency_paths;
-F[
-{I"	path;
-FI"1$root/app/assets/javascripts/admin.js.coffee;
-FI"
-mtime;
-FIu:	Timeç€gÔæ
-:@_zoneI"CST;
-T:nano_numi:nano_deni:submicro"@:offsetiþ «I"hexdigest;
-F"%6176675e83bbada2557058f12a2f7916{I"	path;
-FI"0$root/vendor/assets/javascripts/showdown.js;
-FI"
-mtime;
-FIu;ç€‡è
-;I"CST;
-T;i¾;i;"D`;iþ «I"hexdigest;
-F"%21176a4c8e47c53a1ad7f8ce9a3e2a17{I"	path;
-FI"7$root/vendor/assets/javascripts/markdown-editor.js;
-FI"
-mtime;
-FIu;ç€‡è
-;I"CST;
-T;i¾;i;"D`;iþ «I"hexdigest;
-F"%eda8942e37bc4a0a006a5f150a11ad5f{I"	path;
-FI"7$root/vendor/assets/javascripts/jquery.autogrow.js;
-FI"
-mtime;
-FIu;ç€‡è
-;I"CST;
-T;i¾;i;"D`;iþ «I"hexdigest;
-F"%49c7d7f66fd2ce42affcc88267de6771{I"	path;
-FI"q/home/diego/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.2/vendor/assets/javascripts/bootstrap-modal.js;
-FI"
-mtime;
-FIu;€Ç¼»é
-;I"CST;
-T;i€;i;"d;iþ «I"hexdigest;
-F"%e2d9130cafeedbb6fda7a025321b4004I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c
