@@ -19,8 +19,12 @@ class root.Slide
     @set_up_fullscreen() if @fullscreen
 
 
-  setHeight: (@minHeight)->
+  afterResize: (@minHeight, is_above)->
     @height = @$el.height()
+    if is_above
+      @slideUpQuiet()
+    else
+      @slideDownQuiet()
 
   prev: ->
     $li = @$el.find('.slideshow li.current').prev('li')
@@ -53,6 +57,14 @@ class root.Slide
     
     return 0
 
+  shouldSnapTop: ->
+    mt = parseInt @$el.css('marginTop') , 10
+    mt < 0
+    
+  shouldSnapBottom: ->
+    return false if @transparent
+    mt = parseInt @$el.css('marginTop') , 10
+    mt > -(@height-@minHeight)
 
   slideUpQuiet: ->
     @$el.css

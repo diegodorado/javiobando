@@ -72,9 +72,9 @@ class root.App
       clearTimeout resizeTimer if resizeTimer
       resizeTimer = setTimeout (=> 
         wh = @window.height()
-        s.setHeight(wh) for s in @slides
+        $('body.home.index header .inner .middle').height wh - 20
+        s.afterResize(wh, s.index<@active_index) for s in @slides
         #.... not very pretty....
-        $('body.home.index header .inner .middle').height wh - 20 - 6
       ), 250
     ).trigger 'resize'
 
@@ -134,6 +134,7 @@ class root.App
             s.slideDownQuiet() for s in @slides
   moveNext: ->
     return if @swaping
+    return @activeSlide().snapBottom() if @activeSlide().shouldSnapBottom()
     return @moveLast() if @active_index >= @slides.length - 2
     @swaping = true
     @activeSlide().slideUp =>
@@ -141,6 +142,7 @@ class root.App
       @swaping = false
   movePrev: ->
     return if @swaping
+    return @activeSlide().snapTop() if @activeSlide().shouldSnapTop()
     return @moveFirst() if @active_index <= 1
     @swaping = true
     @activeSlide().snapTop =>

@@ -6615,3 +6615,2608 @@ Served asset /icon-se6154cc7f1.png - 304 Not Modified (2ms)
 
 Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-08-26 11:49:53 -0600
 Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 11:55:17 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (685.1ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (11.9ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (18.4ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (21.5ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (21.5ms)
+Rendered home/index.html.haml within layouts/application (825.7ms)
+Compiled application.css  (18ms)  (pid 1980)
+Compiled main.css  (142060ms)  (pid 1980)
+Compiled devise.css  (35958ms)  (pid 1980)
+Rendered layouts/_tab-link.html.haml (29.1ms)
+Rendered layouts/_header.html.haml (105.9ms)
+Rendered layouts/_alerts.html.haml (24.0ms)
+Rendered layouts/_tab-link.html.haml (6.1ms)
+Rendered layouts/_footer.html.haml (59.7ms)
+Rendered layouts/_ga.html.haml (10.6ms)
+Rendered layouts/_chrome-frame.html.haml (11.5ms)
+Compiled application.js  (103ms)  (pid 1980)
+Compiled jquery.js  (21ms)  (pid 1980)
+Compiled jquery_ujs.js  (6ms)  (pid 1980)
+Compiled jquery.mousewheel.js  (9ms)  (pid 1980)
+Compiled plugins.js  (7ms)  (pid 1980)
+Compiled app.js  (1798ms)  (pid 1980)
+Compiled slide.js  (1130ms)  (pid 1980)
+Compiled contact.js  (1079ms)  (pid 1980)
+Compiled home.js  (889ms)  (pid 1980)
+Completed 200 OK in 186009ms (Views: 185720.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /devise.css - 200 OK (74ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /contact.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /jquery.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /main.css - 200 OK (23ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /plugins.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:24 -0600
+Served asset /app.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+Served asset /slide.js - 200 OK (29ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+Served asset /home.js - 304 Not Modified (37ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/movieframe/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 11:58:25 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (142.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (171.0ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 11:58:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 11:58:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 11:58:35 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (36ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 11:58:35 -0600
+Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 12:05:12 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (164.7ms)
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (15.1ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (13.7ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (22.2ms)
+  [1m[35mPhoto Load (1.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (39.0ms)
+Rendered home/index.html.haml within layouts/application (280.0ms)
+Rendered layouts/_tab-link.html.haml (6.7ms)
+Rendered layouts/_header.html.haml (11.2ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (6.3ms)
+Rendered layouts/_footer.html.haml (10.0ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.4ms)
+Compiled slide.js  (1375ms)  (pid 1980)
+Compiled application.js  (97ms)  (pid 1980)
+Completed 200 OK in 2417ms (Views: 2114.9ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /slide.js - 200 OK (54ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:15 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 12:05:16 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 12:05:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 12:05:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 12:05:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 12:05:26 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 12:05:26 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 12:06:34 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (4.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (308.9ms)
+  [1m[36mArticle Load (1.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (19.0ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (30.0ms)
+  [1m[35mPhoto Load (5.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (36.5ms)
+  [1m[36mPhoto Load (1.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (41.0ms)
+Rendered home/index.html.haml within layouts/application (467.8ms)
+Rendered layouts/_tab-link.html.haml (6.9ms)
+Rendered layouts/_header.html.haml (10.2ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (13.6ms)
+Rendered layouts/_footer.html.haml (16.8ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (2332ms)  (pid 1980)
+Compiled application.js  (128ms)  (pid 1980)
+Completed 200 OK in 4061ms (Views: 3416.9ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 12:06:38 -0600
+Served asset /main.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 12:06:38 -0600
+Served asset /devise.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 12:06:38 -0600
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /app.js - 200 OK (53ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 12:06:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 12:06:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 12:06:40 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.1ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 12:06:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 12:06:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 12:06:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 12:06:50 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 12:06:50 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 12:07:28 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (7.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (278.0ms)
+  [1m[35mArticle Load (1.1ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (24.2ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (20.1ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (32.5ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (53.7ms)
+Rendered home/index.html.haml within layouts/application (450.4ms)
+Rendered layouts/_tab-link.html.haml (11.2ms)
+Rendered layouts/_header.html.haml (14.8ms)
+Rendered layouts/_alerts.html.haml (0.6ms)
+Rendered layouts/_tab-link.html.haml (5.7ms)
+Rendered layouts/_footer.html.haml (11.2ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (2232ms)  (pid 1980)
+Compiled application.js  (115ms)  (pid 1980)
+Completed 200 OK in 4126ms (Views: 3273.5ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 12:07:33 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 12:07:33 -0600
+Served asset /devise.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 12:07:33 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:33 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /app.js - 200 OK (18ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /slide.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 12:07:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 12:07:35 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (21.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.3ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 12:07:45 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 12:07:45 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 12:07:45 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 12:07:45 -0600
+Served asset /saw-white-down.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 12:38:15 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (108.3ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (10.0ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (16.2ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (17.8ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (21.9ms)
+Rendered home/index.html.haml within layouts/application (193.4ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_header.html.haml (6.4ms)
+Rendered layouts/_alerts.html.haml (0.6ms)
+Rendered layouts/_tab-link.html.haml (6.4ms)
+Rendered layouts/_footer.html.haml (14.0ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (954ms)  (pid 1980)
+Compiled slide.js  (1027ms)  (pid 1980)
+Compiled application.js  (53ms)  (pid 1980)
+Completed 200 OK in 2897ms (Views: 2678.9ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /app.js - 200 OK (35ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:18 -0600
+Served asset /slide.js - 200 OK (31ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 12:38:19 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 12:38:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 12:38:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 12:38:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 12:38:29 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 12:38:29 -0600
+Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 12:41:26 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (120.4ms)
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (9.2ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (10.1ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (14.9ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (34.1ms)
+Rendered home/index.html.haml within layouts/application (207.7ms)
+Rendered layouts/_tab-link.html.haml (4.1ms)
+Rendered layouts/_header.html.haml (6.3ms)
+Rendered layouts/_alerts.html.haml (0.3ms)
+Rendered layouts/_tab-link.html.haml (3.4ms)
+Rendered layouts/_footer.html.haml (6.3ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (1119ms)  (pid 1980)
+Compiled slide.js  (1089ms)  (pid 1980)
+Compiled application.js  (63ms)  (pid 1980)
+Completed 200 OK in 2978ms (Views: 2650.9ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /devise.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /main.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /plugins.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:29 -0600
+Served asset /app.js - 200 OK (25ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+Served asset /slide.js - 200 OK (22ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/movieframe/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 12:41:30 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 12:41:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 12:41:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 12:41:40 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 12:41:40 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:04:50 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (109.4ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.4ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (18.7ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (20.1ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (20.5ms)
+Rendered home/index.html.haml within layouts/application (195.4ms)
+Rendered layouts/_tab-link.html.haml (7.4ms)
+Rendered layouts/_header.html.haml (11.3ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (4.5ms)
+Rendered layouts/_footer.html.haml (6.6ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (982ms)  (pid 1980)
+Compiled slide.js  (1034ms)  (pid 1980)
+Compiled application.js  (63ms)  (pid 1980)
+Completed 200 OK in 2772ms (Views: 2555.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /app.js - 200 OK (29ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /slide.js - 200 OK (35ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:04:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:04:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:04:54 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:05:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:05:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:05:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:05:04 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:05:04 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:09:53 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (108.4ms)
+  [1m[35mArticle Load (1.1ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (16.3ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.5ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (15.7ms)
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (24.2ms)
+Rendered home/index.html.haml within layouts/application (194.4ms)
+Rendered layouts/_tab-link.html.haml (5.4ms)
+Rendered layouts/_header.html.haml (7.7ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (5.2ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled slide.js  (1134ms)  (pid 1980)
+Compiled application.js  (73ms)  (pid 1980)
+Completed 200 OK in 1878ms (Views: 1550.7ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:09:55 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /slide.js - 200 OK (23ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:09:56 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.3ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:10:06 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:10:06 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:10:06 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:10:07 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:10:07 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:10:51 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (223.7ms)
+  [1m[36mArticle Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.2ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (11.4ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (18.0ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (28.8ms)
+Rendered home/index.html.haml within layouts/application (308.6ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_header.html.haml (6.0ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (5.2ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (936ms)  (pid 1980)
+Compiled application.js  (59ms)  (pid 1980)
+Completed 200 OK in 1668ms (Views: 1467.3ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /app.js - 200 OK (37ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:10:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:10:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:10:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:10:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:10:54 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.7ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (154.7ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:11:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:11:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:11:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:11:04 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:11:04 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:12:09 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (115.7ms)
+  [1m[35mArticle Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (10.4ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.5ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (15.8ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (27.5ms)
+Rendered home/index.html.haml within layouts/application (195.4ms)
+Rendered layouts/_tab-link.html.haml (5.6ms)
+Rendered layouts/_header.html.haml (7.7ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.2ms)
+Rendered layouts/_footer.html.haml (5.2ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (951ms)  (pid 1980)
+Compiled application.js  (58ms)  (pid 1980)
+Completed 200 OK in 1709ms (Views: 1481.9ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /main.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /devise.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /app.js - 200 OK (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:11 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:12:12 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:12:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:12:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:12:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:12:22 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:12:22 -0600
+Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:18:17 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (154.0ms)
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (8.9ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (10.9ms)
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (17.4ms)
+  [1m[36mPhoto Load (1.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (30.9ms)
+Rendered home/index.html.haml within layouts/application (241.0ms)
+Rendered layouts/_tab-link.html.haml (4.8ms)
+Rendered layouts/_header.html.haml (7.0ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (5.0ms)
+Rendered layouts/_footer.html.haml (7.0ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 813ms (Views: 345.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /main.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /slide.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:18:18 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/portrait/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:18:19 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:18:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:18:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.5ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:18:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:18:29 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:18:29 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-07 13:19:01 -0600
+  Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 316ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-09-07 13:19:01 -0600
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.haml within layouts/devise (25.7ms)
+Rendered layouts/_alerts.html.haml (1.2ms)
+Completed 200 OK in 525ms (Views: 106.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:02 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:02 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:02 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/login-bg.jpg" for 127.0.0.1 at 2012-09-07 13:19:02 -0600
+Served asset /login-bg.jpg - 200 OK (44ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-09-07 13:19:13 -0600
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"022kJHZn3mFs8uSnHb/nKK6c4Bbbi5zrJShe257FD+s=", "user"=>{"email"=>"javi@onthecorner.com.ar", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'javi@onthecorner.com.ar' LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-08-26 17:39:57.426336', "current_sign_in_at" = '2012-09-07 19:19:14.589169', "sign_in_count" = 11, "updated_at" = '2012-09-07 19:19:14.591362' WHERE "users"."id" = 2[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1074ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-07 13:19:15 -0600
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "photos" [0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (83.5ms)
+Compiled rails_admin/rails_admin.css  (18ms)  (pid 1980)
+Compiled rails_admin/imports.css  (27661ms)  (pid 1980)
+Compiled rails_admin/rails_admin.js  (585ms)  (pid 1980)
+Compiled jquery.remotipart.js  (35ms)  (pid 1980)
+Compiled jquery.iframe-transport.js  (9ms)  (pid 1980)
+Compiled jquery.effects.core.js  (12ms)  (pid 1980)
+Compiled jquery.ui.sortable.js  (45ms)  (pid 1980)
+Compiled jquery.ui.core.js  (26ms)  (pid 1980)
+Compiled jquery.ui.widget.js  (1ms)  (pid 1980)
+Compiled jquery.ui.mouse.js  (22ms)  (pid 1980)
+Compiled jquery.ui.autocomplete.js  (33ms)  (pid 1980)
+Compiled jquery.ui.position.js  (2ms)  (pid 1980)
+Compiled jquery.ui.datepicker.js  (20ms)  (pid 1980)
+Compiled rails_admin/jquery.ui.timepicker.js  (20ms)  (pid 1980)
+Compiled rails_admin/ra.datetimepicker.js  (1ms)  (pid 1980)
+Compiled rails_admin/jquery.colorpicker.js  (2ms)  (pid 1980)
+Compiled rails_admin/ra.filter-box.js  (2ms)  (pid 1980)
+Compiled rails_admin/ra.filtering-multiselect.js  (2ms)  (pid 1980)
+Compiled rails_admin/ra.filtering-select.js  (2ms)  (pid 1980)
+Compiled rails_admin/ra.remote-form.js  (2ms)  (pid 1980)
+Compiled rails_admin/jquery.pjax.js  (1ms)  (pid 1980)
+Compiled jquery_nested_form.js  (7ms)  (pid 1980)
+Compiled rails_admin/ra.nested-form-hooks.js  (931ms)  (pid 1980)
+Compiled bootstrap.js  (270ms)  (pid 1980)
+Compiled bootstrap-transition.js  (7ms)  (pid 1980)
+Compiled bootstrap-alert.js  (3ms)  (pid 1980)
+Compiled bootstrap-button.js  (2ms)  (pid 1980)
+Compiled bootstrap-carousel.js  (2ms)  (pid 1980)
+Compiled bootstrap-collapse.js  (6ms)  (pid 1980)
+Compiled bootstrap-dropdown.js  (2ms)  (pid 1980)
+Compiled bootstrap-modal.js  (3ms)  (pid 1980)
+Compiled bootstrap-scrollspy.js  (6ms)  (pid 1980)
+Compiled bootstrap-tab.js  (1ms)  (pid 1980)
+Compiled bootstrap-tooltip.js  (3ms)  (pid 1980)
+Compiled bootstrap-popover.js  (3ms)  (pid 1980)
+Compiled bootstrap-typeahead.js  (3ms)  (pid 1980)
+Compiled rails_admin/ra.widgets.js  (1253ms)  (pid 1980)
+Compiled rails_admin/ui.js  (881ms)  (pid 1980)
+Compiled rails_admin/themes/default/ui.js  (14ms)  (pid 1980)
+Compiled rails_admin/custom/ui.js  (11ms)  (pid 1980)
+Compiled admin.js  (798ms)  (pid 1980)
+Compiled markdown-editor.js  (23ms)  (pid 1980)
+Compiled showdown.js  (5ms)  (pid 1980)
+Compiled jquery.autogrow.js  (1ms)  (pid 1980)
+Compiled admin.css  (73ms)  (pid 1980)
+Compiled markdown-editor.css  (1ms)  (pid 1980)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (40.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/pjax.html.haml (47.5ms)
+Completed 200 OK in 36985ms (Views: 36507.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.remotipart.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.effects.core.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.ui.sortable.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.ui.position.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:52 -0600
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /rails_admin/imports.css - 304 Not Modified (66ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /jquery.iframe-transport.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /jquery_nested_form.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.autogrow.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /jquery.autogrow.js - 200 OK (26ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /admin.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/markdown-editor.css?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /markdown-editor.css - 200 OK (18ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:53 -0600
+Served asset /jquery.ui.core.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /jquery.ui.widget.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /jquery.ui.mouse.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/ui.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (193ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /bootstrap.js - 304 Not Modified (64ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:54 -0600
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/showdown.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:55 -0600
+Served asset /showdown.js - 200 OK (20ms)
+
+
+Started GET "/assets/markdown-editor.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:55 -0600
+Served asset /markdown-editor.js - 200 OK (16ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:55 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-07 13:19:55 -0600
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-07 13:19:55 -0600
+Served asset /glyphicons-halflings.png - 304 Not Modified (46ms)
+
+
+Started GET "/admin/article?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-07 13:20:19 -0600
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" ORDER BY articles.id desc LIMIT 20 OFFSET 0
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (842.8ms)
+Completed 200 OK in 1292ms (Views: 796.2ms | ActiveRecord: 110.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-07 13:20:21 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (53ms)
+
+
+Started GET "/admin/article/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-07 13:20:43 -0600
+  Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article", "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = 3 LIMIT 1
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (7.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (1.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_datetime.html.haml (15.1ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article'[0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_file_upload.html.haml (24.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (2.0ms)
+Rendered rails_admin/main/_form_text.html.haml (9.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_nested_many.html.haml (275.2ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_submit_buttons.html.haml (20.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_file_upload.html.haml (2.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (2.4ms)
+Rendered rails_admin/main/_form_text.html.haml (1.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (447.3ms)
+Completed 200 OK in 899ms (Views: 507.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/system/photos/images/000/000/005/thumb/2004-01-01_00.00.00-3.jpg?1345890327" for 127.0.0.1 at 2012-09-07 13:20:44 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/005/thumb/2004-01-01_00.00.00-3.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/assets/icon-sprite.png" for 127.0.0.1 at 2012-09-07 13:20:44 -0600
+Served asset /icon-sprite.png - 200 OK (16ms)
+
+
+Started GET "/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2012-09-07 13:20:44 -0600
+Served asset /rails_admin/aristo/images/ui-icons_454545_256x240.png - 304 Not Modified (34ms)
+
+
+Started PUT "/admin/article/3/edit" for 127.0.0.1 at 2012-09-07 13:21:04 -0600
+  Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"022kJHZn3mFs8uSnHb/nKK6c4Bbbi5zrJShe257FD+s=", "article"=>{"section"=>"po", "view_as"=>"fs", "published_at"=>"", "photos_attributes"=>{"0"=>{"_destroy"=>"false", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000052aa828 @original_filename="Eduardo_Alvarado_expo_02.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"article[photos_attributes][0][image]\"; filename=\"Eduardo_Alvarado_expo_02.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120907-1980-1ytjkux>>, "orientation"=>"pt", "description"=>"", "id"=>"5"}}}, "return_to"=>"http://localhost:3000/admin/article", "_save"=>"", "model_name"=>"article", "id"=>"3"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 3 LIMIT 1[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article'
+[32mCommand[0m :: identify -format %wx%h '/tmp/Eduardo_Alvarado_expo_02.jpg20120907-1980-ztnou5[0]'
+[32mCommand[0m :: convert '/tmp/Eduardo_Alvarado_expo_02.jpg20120907-1980-ztnou5[0]' -resize "900" '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc'
+[32mCommand[0m :: identify -format %wx%h '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]'
+[32mCommand[0m :: convert '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]' -resize "900x" -crop "900x600+0+270" +repage '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n920120907-1980-ec4dhi'
+[32mCommand[0m :: identify -format %wx%h '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]'
+[32mCommand[0m :: convert '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]' -resize "x900" -crop "600x900+54+0" +repage '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n920120907-1980-1rdwdvh'
+[32mCommand[0m :: identify -format %wx%h '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]'
+[32mCommand[0m :: convert '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]' -resize "600x" -crop "600x400+0+180" +repage '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n920120907-1980-9up2ks'
+[32mCommand[0m :: identify -format %wx%h '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]'
+[32mCommand[0m :: convert '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n9[0]' -resize "100x" -crop "100x100+0+13" +repage '/tmp/Eduardo_Alvarado_expo_0220120907-1980-1i085pc20120907-1980-41x5n920120907-1980-zpu8bq'
+  [1m[36m (0.7ms)[0m  [1mUPDATE "photos" SET "image_file_name" = 'Eduardo_Alvarado_expo_02.jpg', "image_file_size" = 183817, "image_updated_at" = '2012-09-07 19:21:05.397755', "updated_at" = '2012-09-07 19:21:08.738187' WHERE "photos"."id" = 5[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/admin/article
+Completed 302 Found in 4124ms
+
+
+Started GET "/admin/article" for 127.0.0.1 at 2012-09-07 13:21:09 -0600
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY articles.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (485.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (24.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/pjax.html.haml (28.3ms)
+Completed 200 OK in 1121ms (Views: 684.0ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /rails_admin/imports.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.remotipart.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.effects.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.ui.core.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.ui.widget.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:10 -0600
+Served asset /jquery.ui.sortable.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /jquery.ui.mouse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /jquery.ui.position.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /jquery_nested_form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:11 -0600
+Served asset /admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-07 13:21:12 -0600
+Served asset /glyphicons-halflings.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-07 13:21:12 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:21:18 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mArticle Load (0.9ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (148.9ms)
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (16.6ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.3ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (17.6ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (26.8ms)
+Rendered home/index.html.haml within layouts/application (236.0ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (6.0ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (3.4ms)
+Rendered layouts/_footer.html.haml (5.3ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 735ms (Views: 343.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:21:18 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:21:18 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/movieframe/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/movieframe/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:21:19 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:21:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:21:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:21:30 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:21:30 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 13:26:36 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') LIMIT 1[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 3 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (120.0ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (9.2ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (10.7ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (19.5ms)
+  [1m[36mPhoto Load (1.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (23.5ms)
+Rendered home/index.html.haml within layouts/application (199.3ms)
+Rendered layouts/_tab-link.html.haml (4.9ms)
+Rendered layouts/_header.html.haml (7.7ms)
+Rendered layouts/_alerts.html.haml (0.3ms)
+Rendered layouts/_tab-link.html.haml (3.0ms)
+Rendered layouts/_footer.html.haml (5.4ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 623ms (Views: 295.0ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /slide.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /app.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/system/photos/images/000/000/011/landscape/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-07 13:26:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/landscape/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg?1346002658" for 127.0.0.1 at 2012-09-07 13:26:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/portrait/2012-05-28_05.41.11.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.8ms)
+
+
+Started GET "/system/photos/images/000/000/003/landscape/img2.png?1343727385" for 127.0.0.1 at 2012-09-07 13:26:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/landscape/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/system/photos/images/000/000/004/portrait/img1.png?1343727345" for 127.0.0.1 at 2012-09-07 13:26:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/portrait/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/system/photos/images/000/000/006/movieframe/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-07 13:26:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/movieframe/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/system/photos/images/000/000/007/movieframe/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-07 13:26:38 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (142.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (154.8ms)
+
+
+Started GET "/system/photos/images/000/000/008/movieframe/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-07 13:26:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/movieframe/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/system/photos/images/000/000/009/movieframe/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-07 13:26:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/movieframe/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-07 13:26:48 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-07 13:26:48 -0600
+Served asset /saw-white-down.png - 304 Not Modified (0ms)
