@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  has_many :photos, :as => :photoable
+  has_many :photos, :as => :photoable, :dependent => :destroy
 
   validates :section, :presence => true  
   validates :view_as, :presence => true  

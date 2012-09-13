@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
   def index
-    @first_article = Article.where('section=?', :po).first
-    @articles = Article.where('section=?', :pe).order('published_at DESC')
+    @first_article = Portada.where('draft=?', false).first
+    @articles = Personal.where('draft=?', false)
   end
   def comercial
-    @articles = Article.where('section=?', :co).order('published_at DESC')
+    @articles = Comercial.where('draft=?', false)
   end  
 end

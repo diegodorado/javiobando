@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def rails_admin_dynamic_config
 
-      model_list = [ Photo, User, Article ]
+      model_list = [ Photo, User, Article, Portada,Personal, Comercial ]
 
       model_list.each do |m|
           RailsAdmin::Config.reset_model( m )
@@ -24,42 +24,96 @@ class ApplicationController < ActionController::Base
       config.main_app_name = ['Javiobando', 'Admin']
 
 
-      config.excluded_models = [User]
-
+      #config.excluded_models = [User]
 
       config.model Article do
         label "Entrada" 
         label_plural "Articulos"
-        #navigation_label 'Entradas, Cursos y Libros'
         weight 0
-      
-        field :section, :enum do
-          label 'Seccion'
+      end
+
+      config.model Portada do
+        label "Portada" 
+        label_plural "Portada"
+        field :section do
+          default_value do
+            'po'
+          end
         end
-        field :view_as, :enum do
-          label 'Ver como'
+      end
+
+      config.model Personal do
+        label "Personal" 
+        label_plural "Personal"
+        field :section do
+          default_value do
+            'pe'
+          end
         end
-        field :published_at, :date do
-          date_format :default
-          label "Publicado el"
-          group :default
-        end
+      end
 
-        field :photos do
-          label "Imagenes"
-          #orderable true
-          #nested_form false
-          #partial "form_multiple_select"
-          
-        end
+      config.model Comercial do
+        label "Comercial" 
+        label_plural "Comercial"
 
-
-
-
-        edit do
-          include_all_fields
+        field :section do
+          default_value do
+            'co'
+          end
         end
 
+      end
+
+      [Article, Portada, Personal, Comercial ].each do |model_class|
+
+        config.model model_class do
+        
+          field :section, :enum do
+            label 'Seccion'
+          end
+          field :view_as, :enum do
+            label 'Ver como'
+          end
+          field :published_at, :date do
+            date_format :default
+            label "Publicado el"
+          end
+          field :draft do
+            label "Borrador"
+          end
+
+          field :photos do
+            label "Imagenes"
+            #orderable true
+            #nested_form false
+            #partial "form_multiple_select"
+            
+          end
+
+          list do
+            exclude_fields_if do
+              true
+            end
+            if model_class == Article
+              filters [:section]
+              include_fields :section, :published_at, :view_as, :draft, :photos
+            else
+              include_fields :published_at, :view_as, :draft, :photos
+            end
+            field :photos do
+              pretty_value do
+                value.map{ |photo| bindings[:view].tag(:img, { :width=> 50, :src => photo.image.url(:thumb) }) }.join('').html_safe
+              end
+            end
+            sort_by :section, :published_at
+          end
+
+
+          edit do
+            include_all_fields
+          end
+
+        end
       end
 
 
@@ -89,7 +143,10 @@ class ApplicationController < ActionController::Base
 
       end
 
-
+      config.model User do
+        label "Usuario" 
+        label_plural "Usuarios"
+      end
 
 
     end

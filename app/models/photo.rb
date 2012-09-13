@@ -9,8 +9,8 @@ class Photo < ActiveRecord::Base
   has_attached_file :image, {
       :styles => { 
         :original => "900x", 
-        :portrait => "900x600#", 
-        :landscape => "600x900#", 
+        :landscape => "900x600#", 
+        :portrait => "600x900#", 
         :movieframe => "600x400#", 
         :thumb => "100x100#" }
     }
