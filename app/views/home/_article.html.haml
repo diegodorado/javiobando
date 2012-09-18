@@ -2,14 +2,14 @@
   -case article.view_as
     -when 'fs'
       .fullscreen
-        =image_tag article.photos.first.image.url(:portrait)
+        =image_tag article.photos.first.image.url
     -when 'ss'
       .slideshow
         %i.icon-right-arrow
         %i.icon-left-arrow
         %ul
           -article.photos.each do |p|
-            %li
+            %li{:class=> p.orientation}
               .img-wrapper
                 -if p.orientation == 'pt'
                   =image_tag p.image.url(:portrait), :size=> '600x900'

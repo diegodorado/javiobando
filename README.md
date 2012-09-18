@@ -6,4 +6,10 @@ Consideraciones generales:
 - Rollovers: que pasen al color correspondiente con una animación de fundido.
 
 
+- En comercial falta la etiqueta superior de cada entrada que estaba en el 
+diseño originaly en el backend el campo para cargarla  
+(javi-obando_05_a-comercial_portada-01.jpg)
+
+
+
 

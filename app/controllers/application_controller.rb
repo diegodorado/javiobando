@@ -97,15 +97,17 @@ class ApplicationController < ActionController::Base
             if model_class == Article
               filters [:section]
               include_fields :section, :published_at, :view_as, :draft, :photos
+              sort_by :section, :published_at
             else
               include_fields :published_at, :view_as, :draft, :photos
+              sort_by :published_at
             end
             field :photos do
               pretty_value do
                 value.map{ |photo| bindings[:view].tag(:img, { :width=> 50, :src => photo.image.url(:thumb) }) }.join('').html_safe
               end
             end
-            sort_by :section, :published_at
+            
           end
 
 

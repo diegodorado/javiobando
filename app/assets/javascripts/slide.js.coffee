@@ -20,7 +20,54 @@ class root.Slide
 
 
   afterResize: (@minHeight, is_above)->
+    wh = $(window).height()
+    ww = $(window).width()
+
+
+    if @slideshow
+
+      animateSlide @$el.find('li:first, li.current').last()
+
+      #total_height = @$el.find('.slideshow').height()
+      wh = $(window).height()
+      if wh > 600 + 12 + 30 + 20 #those 30 are article paddingTop
+        #those 20, just a little bit 
+        #sets img margin to center them vertically
+        @$el.find('li.ls').css
+          marginTop: (wh - 600 - 12)/2
+      else
+        @$el.find('li.ls').css
+          marginTop: 0 # (total_height - 600 - 12)/2
+
+
+      if wh > 900 + 12 + 30 + 20
+        @$el.find('li.pt').css
+          marginTop: (wh - 900 - 12)/2
+      else
+        @$el.find('li.pt').css
+          marginTop: 0
+
+      @$el.find('.slideshow').find('.icon-right-arrow,.icon-left-arrow').css 'top', wh/2 -8 + 30
+
+      @$el.find('.slideshow').height @$el.find('.slideshow ul').height()
+      @$el.find('.slideshow').addClass 'ready not-played'
+
+    #if @movieframe
+    if @fullscreen
+      aspectRatio = 900/600
+      @$el.find('.fullscreen').toggleClass "tall", (ww/wh) < aspectRatio
+      top = (wh - ww/aspectRatio)/2
+      top = 0 if top > 0
+      left = (ww - wh*aspectRatio)/2
+      left = 0 if left > 0
+      @$el.find('.fullscreen img').css
+        top: top
+        left: left
+
+
     @height = @$el.height()
+
+
     if is_above
       @slideUpQuiet()
     else
@@ -98,33 +145,7 @@ class root.Slide
 
 
   set_up_fullscreen: ->
-
-    aspectRatio = 900/600
-
-    $(window).resize(=>
-      wh = $(window).height()
-      ww = $(window).width()
-      @$el.find('.fullscreen').toggleClass "tall", (ww/wh) < aspectRatio
-      top = (wh - ww/aspectRatio)/2
-      top = 0 if top > 0
-      left = (ww - wh*aspectRatio)/2
-      left = 0 if left > 0
-      @$el.find('.fullscreen img').css
-        top: top
-        left: left
-    ).trigger "resize"
-
-
-
-
-
-
-
-
-
-
-
-
+    false
 
 
   set_up_movieframes: ->
@@ -136,9 +157,7 @@ class root.Slide
       setTimeout (=>
         $(@).trigger 'mf:play'
       ), 75
-
-
-        
+  
     @$el.on 'mouseenter', '.img-wrapper', (ev)->
       $(@).off 'mf:play', mf_play
     @$el.on 'mouseleave', '.img-wrapper', (ev)->
@@ -183,17 +202,6 @@ class root.Slide
 
   set_up_slideshow: ->
 
-    animateSlide @$el.find('li:first')
-
-    total_height = @$el.find('.slideshow').height()
-    #sets img margin to center them vertically
-    @$el.find('li').each  ->
-      $(@).css
-        marginTop: (total_height - $(@).height())/2
-
-    @$el.find('.slideshow').height total_height
-
-    @$el.find('.slideshow').addClass 'ready not-played'
 
 
     #bind all click events with single delegation

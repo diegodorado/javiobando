@@ -20,6 +20,8 @@ class root.App
     @setup_slides()
     @bind_and_trigger_resize()
     @contact = new Contact $('header'), $('body.home.index').size() > 0
+    #open external links in new window
+    $(document.links).filter( () -> @hostname != window.location.hostname).attr('target', '_blank')
 
 
 
