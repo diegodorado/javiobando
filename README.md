@@ -6,10 +6,9 @@ Consideraciones generales:
 - Rollovers: que pasen al color correspondiente con una animación de fundido.
 
 
-- En comercial falta la etiqueta superior de cada entrada que estaba en el 
-diseño originaly en el backend el campo para cargarla  
-(javi-obando_05_a-comercial_portada-01.jpg)
+La etiqueta tenemos que ponerla. Javier la reclamó y realmente no estamos en situación de poder sacarle funcionalidades que ya le habíamos pasado.
 
-
-
+además vemos dos cosas:
+- se corta la solapa con la información al desplegarla y pasar la siguiente imagen (corte leyenda.png)
+- las verticales a página completa ahora las reencuadra desde arriba y no desde el centro como antes.
 

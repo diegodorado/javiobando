@@ -126,7 +126,9 @@ class ApplicationController < ActionController::Base
         field :image do
           label "Imagen"
         end
-
+        field :tag do
+          label 'Etiqueta'
+        end
         field :orientation do
           label 'Orientacion'
         end
@@ -140,7 +142,7 @@ class ApplicationController < ActionController::Base
           exclude_fields_if do
             true
           end        
-          include_fields :image, :orientation, :description
+          include_fields :image,:tag, :orientation, :description
         end
 
       end

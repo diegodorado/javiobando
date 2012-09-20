@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120911184056) do
+ActiveRecord::Schema.define(:version => 20120920093605) do
 
   create_table "articles", :force => true do |t|
     t.string   "section"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20120911184056) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.text     "description"
+    t.string   "tag"
   end
 
   create_table "rails_admin_histories", :force => true do |t|

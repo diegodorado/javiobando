@@ -78,7 +78,11 @@ class root.App
         s.afterResize(wh, s.index<@active_index) for s in @slides
         #.... not very pretty....
       ), 250
-    ).trigger 'resize'
+    )
+
+    @window.load =>
+      #font fully loaded
+      @window.trigger 'resize'
 
   #handles slides scroll
   bind_scroll: ->

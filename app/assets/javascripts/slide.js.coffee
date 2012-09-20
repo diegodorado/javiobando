@@ -49,18 +49,24 @@ class root.Slide
 
       @$el.find('.slideshow').find('.icon-right-arrow,.icon-left-arrow').css 'top', wh/2 -8 + 30
 
+
+      @$el.find('.slideshow li .img-data').each (i,el) ->
+        #fix img.data heights
+        $(el).height $(el).height()
+
       @$el.find('.slideshow').height @$el.find('.slideshow ul').height()
       @$el.find('.slideshow').addClass 'ready not-played'
 
     #if @movieframe
     if @fullscreen
-      aspectRatio = 900/600
+      $img = @$el.find('.fullscreen img')
+      aspectRatio = $img.width()/$img.height()
       @$el.find('.fullscreen').toggleClass "tall", (ww/wh) < aspectRatio
       top = (wh - ww/aspectRatio)/2
       top = 0 if top > 0
       left = (ww - wh*aspectRatio)/2
       left = 0 if left > 0
-      @$el.find('.fullscreen img').css
+      $img.css
         top: top
         left: left
 
@@ -177,7 +183,8 @@ class root.Slide
     return if $ss.hasClass 'moving'
 
     #close data
-    $ss.find('li.current .img-data').removeClass 'open'
+    $data = $ss.find('li.current .img-data')
+    toggle_img_data $data if $data.hasClass('open')
 
     $ss.find('li').removeClass 'current'
     $li.addClass 'current'
@@ -200,8 +207,14 @@ class root.Slide
     $ss.find('.icon-right-arrow').css 'right', gap-8
     $ss.find('.icon-left-arrow').css 'left', gap-8
 
-  set_up_slideshow: ->
+  toggle_img_data= ($data) ->
+    $dw = $data.find('.img-data-wrapper')
+    $dw.animate 
+      height: "toggle"
+    , 200, ->
+      $data.toggleClass 'open'
 
+  set_up_slideshow: ->
 
 
     #bind all click events with single delegation
@@ -215,12 +228,8 @@ class root.Slide
       if $t.hasClass 'icon-right-arrow'
         animateSlide $t.closest('.slideshow').find('li.current').next('li')
       if $t.hasClass 'img-data-handler'
-        $data = $t.closest('.img-data')
-        $dw = $data.find('.img-data-wrapper')
-        $dw.animate 
-          height: "toggle"
-        , 200, ->
-          $data.toggleClass 'open'
+        toggle_img_data $t.closest('.img-data')
+
 
     #hover next slide behaviour
     @$el.on 'mouseenter','li:not(.current), .icon-right-arrow', (ev) ->

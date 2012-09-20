@@ -10,6 +10,10 @@
         %ul
           -article.photos.each do |p|
             %li{:class=> p.orientation}
+              -unless p.tag.blank?
+                .img-tag
+                  %i.icon
+                  %span #{p.tag}
               .img-wrapper
                 -if p.orientation == 'pt'
                   =image_tag p.image.url(:portrait), :size=> '600x900'

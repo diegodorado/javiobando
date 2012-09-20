@@ -21,6 +21,24 @@
       margin: 0 37px
       cursor: pointer
       text-align: center
+      .img-tag
+        text-align: left
+        font-family: Montserrat
+        font-size: 13px
+        line-height: 16px
+        margin-bottom: 13px
+        letter-spacing: 1px
+        height: 16px
+        text-transform: uppercase
+        color: #FCFCFC
+        .icon
+          @extend .icon-tag-arrow
+          display: block
+          float: left
+          margin-right: 8px
+        span
+          display: block
+          float: left
       .img-wrapper
         border: 6px solid $white
         +opacity(0.3)
@@ -47,30 +65,29 @@
           .icon
             +transition(all 0.5s ease)    
         .img-data-wrapper
-          //+transparent
           overflow: hidden
           .top
             margin-top: 4px
             border-width: 1px 1px 0 1px
             padding: 18px 24px 0
-            span, a
+            p
               +transition(opacity 0.5s ease)    
               +transparent
         &.open
           .img-data-handler .icon
             +rotate
           .img-data-wrapper .top
-            span, a
+            p
               +opaque
         &.hidden
           +transparent
+          .img-data-handler
+            cursor: default
       &.current
         cursor: default
         .img-wrapper
           +opaque
-        .img-data
-          .img-data-wrapper
-            //+opaque
+
 
   &.ready
     +opaque
