@@ -127,7 +127,7 @@ a.function-help:hover span { background-position: -405px -28px; }
   line-height: 1.8em;
   margin: 0.7em 0;
   padding: 0.5em;
-  width: 98% !important;
+  /*width: 98% !important;*/
   overflow: hidden;
   
 }

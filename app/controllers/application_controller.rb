@@ -131,6 +131,7 @@ class ApplicationController < ActionController::Base
         end
         field :orientation do
           label 'Orientacion'
+          #partial "form_multiple_select"
         end
         field :photoable do
           label "Registro Relacionado"

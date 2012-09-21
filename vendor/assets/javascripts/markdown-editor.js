@@ -206,8 +206,10 @@
     }
     if (methods[method]) return methods[method].apply(this, Array.prototype.slice.call(arguments, 1))
 
-    else if (typeof method === 'object' || ! method)
+    else if (typeof method === 'object' || ! method){
+      if ($(this).hasClass('editor-body')) return ;
       return methods.init.apply( this, arguments )
+    }
     else
       $.error('Method ' +  method + ' does not exist on jQuery.markdownEditor' )
   }

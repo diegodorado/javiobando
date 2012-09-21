@@ -5,17 +5,28 @@
 #require jquery.ui.selectable
 #= require_self
 
-window.init_textarea= ->
+set_things= ->
   
-  $ ->
+  tw = parseInt($('.has_many_association_type.photos_field .controls').width() * 0.94, 10)
+  setTimeout (-> 
+    #hack for nested rails admin control duplication
+    $('.tab-pane.active .control-group.orientation_field .input-append:eq(1)').remove()
 
     #set textareas width same as live-preview
     #hidden textareas also must have explicit width for autogrow to work propperly
-    $("textarea:not(.editor-body)").width $("textarea:visible").next('.live-preview').width()
-    $("textarea:not(.editor-body)").autogrow()
-    #must be last becuase selector
-    $("textarea:not(.editor-body)").markdownEditor()
+    $("form textarea").width tw
+    $("form textarea").each ->
+      $(this).markdownEditor()
+    $("form textarea").autogrow()
 
+  ), 500
+
+window.init_textarea= ->
+  $ ->
+    set_things()
+
+  $('.has_many_association_type.photos_field').on 'click', 'a.add_nested_fields', (ev)->
+    set_things()
 
 $ ->
   $("#markdown-editor-dialog").on "click",".btn-primary", (e) ->
