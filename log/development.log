@@ -47569,3 +47569,1456 @@ Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/
 Rendered rails_admin/main/_form_text.html.haml (2.5ms)
 Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (483.3ms)
 Completed 200 OK in 1084ms (Views: 585.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:04:14 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (2.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (489.4ms)
+  [1m[36mPersonal Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (63.6ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (47.2ms)
+Rendered home/index.html.haml within layouts/application (659.7ms)
+Rendered layouts/_tab-link.html.haml (17.7ms)
+Rendered layouts/_header.html.haml (62.8ms)
+Rendered layouts/_alerts.html.haml (13.1ms)
+Rendered layouts/_tab-link.html.haml (3.7ms)
+Rendered layouts/_footer.html.haml (43.5ms)
+Rendered layouts/_ga.html.haml (5.6ms)
+Rendered layouts/_chrome-frame.html.haml (6.9ms)
+Completed 200 OK in 1918ms (Views: 1801.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:04:16 -0600
+Served asset /main.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /devise.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /jquery.js - 304 Not Modified (219ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /plugins.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /app.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /slide.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /contact.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /home.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (59ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-27 02:04:17 -0600
+Served asset /saw-white-down.png - 304 Not Modified (35ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:18:02 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.6ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (110.0ms)
+  [1m[35mPersonal Load (0.6ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (58.0ms)
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (52.9ms)
+Rendered home/index.html.haml within layouts/application (233.6ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_header.html.haml (5.9ms)
+Rendered layouts/_alerts.html.haml (0.3ms)
+Rendered layouts/_tab-link.html.haml (3.7ms)
+Rendered layouts/_footer.html.haml (5.6ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled slide.js  (1596ms)  (pid 3548)
+Compiled application.js  (81ms)  (pid 3548)
+Completed 200 OK in 2478ms (Views: 2085.4ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:18:04 -0600
+Served asset /main.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:18:04 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:04 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /plugins.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /slide.js - 200 OK (34ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-27 02:18:05 -0600
+Served asset /saw-white-down.png - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:22:10 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (215.0ms)
+  [1m[36mPersonal Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (56.9ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (49.2ms)
+Rendered home/index.html.haml within layouts/application (334.4ms)
+Rendered layouts/_tab-link.html.haml (5.1ms)
+Rendered layouts/_header.html.haml (7.5ms)
+Rendered layouts/_alerts.html.haml (0.6ms)
+Rendered layouts/_tab-link.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (5.4ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (912ms)  (pid 3548)
+Compiled slide.js  (1034ms)  (pid 3548)
+Compiled application.js  (57ms)  (pid 3548)
+Completed 200 OK in 2930ms (Views: 2509.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:22:13 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:22:13 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:22:13 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:13 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:13 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /app.js - 200 OK (14ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /slide.js - 200 OK (41ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-09-27 02:22:14 -0600
+Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:23:13 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (115.1ms)
+  [1m[35mPersonal Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (62.0ms)
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (53.8ms)
+Rendered home/index.html.haml within layouts/application (244.9ms)
+Rendered layouts/_tab-link.html.haml (4.4ms)
+Rendered layouts/_header.html.haml (6.9ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (108.3ms)
+Rendered layouts/_footer.html.haml (111.9ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (902ms)  (pid 3548)
+Compiled application.js  (57ms)  (pid 3548)
+Completed 200 OK in 1878ms (Views: 1466.5ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /app.js - 200 OK (24ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:15 -0600
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:23:46 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (209.5ms)
+  [1m[36mPersonal Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (63.3ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (48.0ms)
+Rendered home/index.html.haml within layouts/application (333.4ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (6.1ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_footer.html.haml (6.2ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (896ms)  (pid 3548)
+Compiled application.js  (55ms)  (pid 3548)
+Completed 200 OK in 1850ms (Views: 1444.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:48 -0600
+Served asset /app.js - 200 OK (173ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:49 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:49 -0600
+Served asset /slide.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:49 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:49 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:23:49 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:24:01 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.6ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (122.9ms)
+  [1m[35mPersonal Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (60.8ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (44.9ms)
+Rendered home/index.html.haml within layouts/application (240.8ms)
+Rendered layouts/_tab-link.html.haml (5.7ms)
+Rendered layouts/_header.html.haml (8.3ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.0ms)
+Rendered layouts/_footer.html.haml (5.2ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Compiled app.js  (1061ms)  (pid 3548)
+Compiled application.js  (65ms)  (pid 3548)
+Completed 200 OK in 1930ms (Views: 1521.8ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /main.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /devise.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:03 -0600
+Served asset /app.js - 200 OK (14ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:04 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:04 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:04 -0600
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:04 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:24:34 -0600
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (213.1ms)
+  [1m[36mPersonal Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (60.6ms)
+  [1m[36mPhoto Load (1.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (47.5ms)
+Rendered home/index.html.haml within layouts/application (334.0ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (6.2ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (5.3ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (947ms)  (pid 3548)
+Compiled application.js  (73ms)  (pid 3548)
+Completed 200 OK in 1918ms (Views: 1503.4ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /main.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /devise.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /app.js - 200 OK (48ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:24:36 -0600
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:25:01 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (118.2ms)
+  [1m[35mPersonal Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (60.5ms)
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (43.7ms)
+Rendered home/index.html.haml within layouts/application (234.5ms)
+Rendered layouts/_tab-link.html.haml (4.6ms)
+Rendered layouts/_header.html.haml (6.7ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.4ms)
+Rendered layouts/_footer.html.haml (5.3ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Compiled app.js  (969ms)  (pid 3548)
+Compiled application.js  (56ms)  (pid 3548)
+Completed 200 OK in 1928ms (Views: 1536.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /app.js - 200 OK (29ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /slide.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:25:04 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/comercial" for 127.0.0.1 at 2012-09-27 02:27:22 -0600
+  Processing by HomeController#comercial as HTML
+  [1m[36mComercial Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='co') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 13 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (129.9ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 9 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (127.6ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 12 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (11.0ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 11 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (9.0ms)
+Rendered home/comercial.html.haml within layouts/application (301.8ms)
+Rendered layouts/_tab-link.html.haml (6.3ms)
+Rendered layouts/_header.html.haml (8.6ms)
+Rendered layouts/_alerts.html.haml (0.6ms)
+Rendered layouts/_tab-link.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (5.7ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 804ms (Views: 404.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:22 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/saw-dark-down.png" for 127.0.0.1 at 2012-09-27 02:27:23 -0600
+Served asset /saw-dark-down.png - 304 Not Modified (37ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-27 02:27:33 -0600
+  Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 369ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-09-27 02:27:34 -0600
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.haml within layouts/devise (20.6ms)
+Rendered layouts/_alerts.html.haml (1.4ms)
+Completed 200 OK in 573ms (Views: 105.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:35 -0600
+Served asset /main.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:35 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:35 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/login-bg.jpg" for 127.0.0.1 at 2012-09-27 02:27:35 -0600
+Served asset /login-bg.jpg - 304 Not Modified (53ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-09-27 02:27:44 -0600
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KbRmxRqPWCi6BZP+rSmMq4Ce3S46G+adodoZmKBD5h0=", "user"=>{"email"=>"javi@onthecorner.com.ar", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'javi@onthecorner.com.ar' LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-09-21 06:51:49.347925', "current_sign_in_at" = '2012-09-27 08:27:45.214265', "sign_in_count" = 18, "updated_at" = '2012-09-27 08:27:45.216407' WHERE "users"."id" = 2[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1044ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-27 02:27:45 -0600
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='co')[0m
+  [1m[35mComercial Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='co') ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "articles" [0m
+  [1m[35mArticle Load (1.1ms)[0m  SELECT "articles".* FROM "articles" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "photos" [0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='pe')[0m
+  [1m[35mPersonal Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='po')[0m
+  [1m[35mPortada Load (0.6ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (143.7ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (27.8ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/pjax.html.haml (144.5ms)
+Completed 200 OK in 2727ms (Views: 1936.2ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /rails_admin/imports.css - 304 Not Modified (115ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markdown-editor.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /markdown-editor.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /admin.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /jquery.iframe-transport.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:48 -0600
+Served asset /jquery.remotipart.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.effects.core.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.core.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.widget.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.mouse.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.sortable.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.position.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /jquery_nested_form.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:49 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (96ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (151ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /bootstrap.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /rails_admin/ui.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/showdown.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /showdown.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/markdown-editor.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /markdown-editor.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.autogrow.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /jquery.autogrow.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:27:50 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-27 02:27:51 -0600
+Served asset /glyphicons-halflings.png - 304 Not Modified (71ms)
+
+
+Started GET "/admin/comercial?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-27 02:27:57 -0600
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"comercial"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mComercial Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='co') ORDER BY articles.published_at desc LIMIT 20 OFFSET 0
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 13 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 9 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 12 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 11 AND "photos"."photoable_type" = 'Article'
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='co')[0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (777.2ms)
+Completed 200 OK in 1485ms (Views: 884.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/rails_admin/bullet_white.png" for 127.0.0.1 at 2012-09-27 02:27:59 -0600
+Served asset /rails_admin/bullet_white.png - 304 Not Modified (89ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-27 02:27:59 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (186ms)
+
+
+Started GET "/admin/personal?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-27 02:28:02 -0600
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"personal"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mPersonal Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY articles.published_at desc LIMIT 20 OFFSET 0[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='pe')[0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (423.2ms)
+Completed 200 OK in 1222ms (Views: 614.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/rails_admin/bullet_white.png" for 127.0.0.1 at 2012-09-27 02:28:04 -0600
+Served asset /rails_admin/bullet_white.png - 304 Not Modified (2ms)
+
+
+Started GET "/system/photos/images/000/000/006/thumb/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-27 02:28:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/thumb/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/007/thumb/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-27 02:28:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/thumb/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/system/photos/images/000/000/009/thumb/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-27 02:28:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/thumb/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/system/photos/images/000/000/008/thumb/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-27 02:28:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/thumb/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/system/photos/images/000/000/019/thumb/cu_6_copia_2.jpg?1347326379" for 127.0.0.1 at 2012-09-27 02:28:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/019/thumb/cu_6_copia_2.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/system/photos/images/000/000/012/thumb/capa_2.jpg?1345775117" for 127.0.0.1 at 2012-09-27 02:28:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/thumb/capa_2.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/system/photos/images/000/000/003/thumb/img2.png?1343727385" for 127.0.0.1 at 2012-09-27 02:28:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/thumb/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/system/photos/images/000/000/004/thumb/img1.png?1343727345" for 127.0.0.1 at 2012-09-27 02:28:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/004/thumb/img1.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/system/photos/images/000/000/011/thumb/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-27 02:28:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/thumb/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/admin/personal/10/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-27 02:28:11 -0600
+  Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"personal", "id"=>"10"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mPersonal Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = 10 AND (section='pe') ORDER BY published_at DESC LIMIT 1[0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (8.1ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (1.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_datetime.html.haml (17.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_field.html.haml (118.9ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article'
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_file_upload.html.haml (27.4ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_field.html.haml (1.2ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (3.0ms)
+Rendered rails_admin/main/_form_text.html.haml (8.5ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_nested_many.html.haml (211.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_submit_buttons.html.haml (22.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_file_upload.html.haml (2.9ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_field.html.haml (2.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/_form_enumeration.html.haml (2.3ms)
+Rendered rails_admin/main/_form_text.html.haml (2.0ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (542.6ms)
+Completed 200 OK in 1275ms (Views: 763.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/system/photos/images/000/000/019/thumb/cu_6_copia_2.jpg?1347326379" for 127.0.0.1 at 2012-09-27 02:28:13 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/019/thumb/cu_6_copia_2.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2012-09-27 02:28:13 -0600
+Served asset /rails_admin/aristo/images/ui-icons_454545_256x240.png - 304 Not Modified (64ms)
+
+
+Started GET "/assets/icon-sprite.png" for 127.0.0.1 at 2012-09-27 02:28:15 -0600
+Served asset /icon-sprite.png - 304 Not Modified (25ms)
+
+
+Started PUT "/admin/personal/10/edit" for 127.0.0.1 at 2012-09-27 02:28:30 -0600
+  Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KbRmxRqPWCi6BZP+rSmMq4Ce3S46G+adodoZmKBD5h0=", "personal"=>{"section"=>"pe", "view_as"=>"fs", "published_at"=>"2012-08-30 03:00:00.000000", "draft"=>"0", "photos_attributes"=>{"0"=>{"_destroy"=>"false", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000050cabc0 @original_filename="IMG_3844.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"personal[photos_attributes][0][image]\"; filename=\"IMG_3844.JPG\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120927-3548-oybkey>>, "tag"=>"", "orientation"=>"ls", "description"=>"", "id"=>"19"}}}, "return_to"=>"http://localhost:3000/admin/personal", "_save"=>"", "model_name"=>"personal", "id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mPersonal Load (0.9ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = 10 AND (section='pe') ORDER BY published_at DESC LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article'[0m
+[32mCommand[0m :: identify -format %wx%h '/tmp/IMG_3844.JPG20120927-3548-95k5gp[0]'
+[32mCommand[0m :: convert '/tmp/IMG_3844.JPG20120927-3548-95k5gp[0]' -resize "1600" '/tmp/IMG_384420120927-3548-zzky3v'
+[32mCommand[0m :: identify -format %wx%h '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]'
+[32mCommand[0m :: convert '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]' -resize "900x" -crop "900x600+0+37" +repage '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m20120927-3548-1081b9b'
+[32mCommand[0m :: identify -format %wx%h '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]'
+[32mCommand[0m :: convert '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]' -resize "x900" -crop "600x900+300+0" +repage '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m20120927-3548-1lcb8i4'
+[32mCommand[0m :: identify -format %wx%h '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]'
+[32mCommand[0m :: convert '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]' -resize "600x" -crop "600x400+0+25" +repage '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m20120927-3548-asxfhf'
+[32mCommand[0m :: identify -format %wx%h '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]'
+[32mCommand[0m :: convert '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m[0]' -resize "x100" -crop "100x100+16+0" +repage '/tmp/IMG_384420120927-3548-zzky3v20120927-3548-jnwr8m20120927-3548-3mumcp'
+  [1m[35m (1.2ms)[0m  UPDATE "articles" SET "published_at" = '2012-08-30 06:00:00.000000', "draft" = 'f', "updated_at" = '2012-09-27 08:28:44.718326' WHERE "articles"."id" = 10
+  [1m[36m (0.7ms)[0m  [1mUPDATE "photos" SET "image_file_name" = 'IMG_3844.JPG', "image_file_size" = 336290, "image_updated_at" = '2012-09-27 08:28:31.951348', "tag" = '', "updated_at" = '2012-09-27 08:28:44.727918' WHERE "photos"."id" = 19[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/admin/personal
+Completed 302 Found in 14128ms
+
+
+Started GET "/admin/personal" for 127.0.0.1 at 2012-09-27 02:28:45 -0600
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"personal"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mPersonal Load (1.4ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') ORDER BY articles.published_at desc LIMIT 20 OFFSET 0[0m
+  [1m[35mPhoto Load (1.4ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 4 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 6 AND "photos"."photoable_type" = 'Article'
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 2 AND "photos"."photoable_type" = 'Article'[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article'
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE (section='pe')[0m
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (631.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (19.3ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/rails_admin-0.0.1/app/views/layouts/rails_admin/pjax.html.haml (116.3ms)
+Completed 200 OK in 2054ms (Views: 1171.6ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /rails_admin/imports.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/markdown-editor.css?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /markdown-editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:47 -0600
+Served asset /jquery.remotipart.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.effects.core.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.core.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.widget.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.mouse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.sortable.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.position.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:48 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /rails_admin/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/showdown.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /showdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/markdown-editor.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /markdown-editor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.autogrow.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /jquery.autogrow.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+Served asset /admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/system/photos/images/000/000/008/thumb/Foto0067.jpg?1344895426" for 127.0.0.1 at 2012-09-27 02:28:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/008/thumb/Foto0067.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/rails_admin/bullet_white.png" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+Served asset /rails_admin/bullet_white.png - 304 Not Modified (3ms)
+
+
+Started GET "/system/photos/images/000/000/009/thumb/Foto0068.jpg?1344895429" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/009/thumb/Foto0068.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/system/photos/images/000/000/007/thumb/Foto0066.jpg?1344895423" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/007/thumb/Foto0066.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/system/photos/images/000/000/006/thumb/Foto0063.jpg?1344895415" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/006/thumb/Foto0063.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/system/photos/images/000/000/012/thumb/capa_2.jpg?1345775117" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/012/thumb/capa_2.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/system/photos/images/000/000/003/thumb/img2.png?1343727385" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/003/thumb/img2.png"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/system/photos/images/000/000/004/thumb/img1.png?1343727345" for 127.0.0.1 at 2012-09-27 02:28:50 -0600
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
+
+
+Started GET "/system/photos/images/000/000/011/thumb/gisella.jpg?1345774643" for 127.0.0.1 at 2012-09-27 02:29:00 -0600
+
+ActionController::RoutingError (No route matches [GET] "/system/photos/images/000/000/011/thumb/gisella.jpg"):
+  
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 02:29:37 -0600
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (118.5ms)
+  [1m[35mPersonal Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (60.8ms)
+  [1m[35mPhoto Load (1.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (53.7ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (9.7ms)
+Rendered home/index.html.haml within layouts/application (258.6ms)
+Rendered layouts/_tab-link.html.haml (4.2ms)
+Rendered layouts/_header.html.haml (6.4ms)
+Rendered layouts/_alerts.html.haml (0.3ms)
+Rendered layouts/_tab-link.html.haml (3.5ms)
+Rendered layouts/_footer.html.haml (5.6ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.4ms)
+Completed 200 OK in 780ms (Views: 354.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /devise.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /app.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /plugins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /slide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 02:29:39 -0600
+Served asset /application.js - 304 Not Modified (7ms)

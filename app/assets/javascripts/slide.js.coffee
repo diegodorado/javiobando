@@ -3,7 +3,7 @@ root = exports ? window
 #slide class
 
 class root.Slide
-  speed: 700
+  speed: 400
   constructor: (@$el, @index)->
     @$el.addClass 'slide'
     @$el.css 'z-index', 10000 - @index
@@ -89,8 +89,8 @@ class root.Slide
 
 
   scroll: (delta)->
-    
-    mt = parseInt(@$el.css('marginTop'), 10) + 50 * delta
+    speed = 100 #50
+    mt = parseInt(@$el.css('marginTop'), 10) + speed * delta
     if mt > -100 and delta > 0
       return -1
 
@@ -106,7 +106,7 @@ class root.Slide
 
     @$el.stop().animate
       marginTop: mt
-    , @speed/2
+    , @speed
     
     return 0
 

@@ -32,11 +32,6 @@ class root.App
       @slides.push new Slide $(el), i
 
 
-  # Simple logger.
-  log: ->
-    console?.log arguments if @debug
-
-
   bind_keyboard: ->
 
     @window.on "keydown", (ev) =>
@@ -47,7 +42,6 @@ class root.App
         unless @contact.closed() 
           @contact.close() 
           return
-
 
       switch key
         when 35 then @moveLast()            #FIN
@@ -97,7 +91,7 @@ class root.App
       wheelTimer = setTimeout (=> 
         @scroll wheelDelta
         wheelDelta = 0
-      ), 50
+      ), 150
 
   #utils functions
   activeSlide: ->
