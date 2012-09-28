@@ -2,7 +2,7 @@
   -case article.view_as
     -when 'fs'
       .fullscreen
-        =image_tag article.photos.first.image.url
+        =image_tag article.photos.first.image.url if article.photos.first
     -when 'ss'
       .slideshow
         %i.icon-right-arrow
