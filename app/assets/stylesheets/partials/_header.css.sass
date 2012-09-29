@@ -161,3 +161,18 @@ body.home.comercial
     font-size: 11px
     padding-bottom: 8px
 
+
+
+
+//show these element with ease
+body
+  header
+    #header-arrows, .tab-link, .hand-down, .cp-links
+      +transition(opacity 1s ease)
+body.loading
+  header
+    #header-arrows, .tab-link, .hand-down, .cp-links
+      +transparent
+
+
+

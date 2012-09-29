@@ -77,6 +77,7 @@ class root.App
     @window.load =>
       #font fully loaded
       @window.trigger 'resize'
+      $('body').removeClass 'loading'
 
   #handles slides scroll
   bind_scroll: ->
