@@ -77,8 +77,9 @@ class root.App
     @window.load =>
       #font fully loaded
       @window.trigger 'resize'
-      $('body').removeClass 'loading'
-
+      setTimeout (->
+        $('body').removeClass 'loading'
+      ), 500
   #handles slides scroll
   bind_scroll: ->
     #see http://ejohn.org/blog/learning-from-twitter/
