@@ -10,8 +10,8 @@
         %ul
           -article.photos.each do |p|
             %li{:class=> p.orientation}
-              -unless p.tag.blank?
-                .img-tag
+              .img-tag
+                -unless p.tag.blank?
                   %i.icon
                   %span #{p.tag}
               .img-wrapper
