@@ -2,7 +2,7 @@
   =render :partial => "layouts/tab-link"
   .inner
     #header-arrows
-      %i.icon-arrows 
+      %i#icon-arrows.icon-arrows 
     .top
       .contact
         .envelope
@@ -36,4 +36,12 @@
         %a(href='#')
           %i.icon
     .bottom
+
+:javascript
+  //to make sprite load first
+  el = document.getElementById("icon-arrows");
+  src = window.getComputedStyle(el).backgroundImage;
+  src =  src.replace(/^url\(["']?/, '').replace(/["']?\)$/, '')
+  i = new Image()
+  i.src = src
 

@@ -55402,3 +55402,1061 @@ Served asset /application.js - 304 Not Modified (8ms)
 
 Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 01:37:26 -0300
 Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:02:22 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (2.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (582.4ms)
+  [1m[35mPersonal Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (77.1ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (47.5ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (13.5ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (15.3ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (5.1ms)
+Rendered home/index.html.haml within layouts/application (805.5ms)
+Rendered layouts/_tab-link.html.haml (17.4ms)
+Rendered layouts/_header.html.haml (65.6ms)
+Rendered layouts/_alerts.html.haml (12.9ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_footer.html.haml (37.4ms)
+Rendered layouts/_ga.html.haml (7.1ms)
+Rendered layouts/_chrome-frame.html.haml (12.1ms)
+Completed 200 OK in 1977ms (Views: 1820.7ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /main.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /devise.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /jquery.js - 304 Not Modified (94ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /plugins.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:25 -0300
+Served asset /slide.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /app.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /contact.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /home.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (28ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-11-08 02:02:26 -0300
+Served asset /saw-white-down.png - 304 Not Modified (34ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:03:57 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (168.1ms)
+  [1m[36mPersonal Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (89.1ms)
+  [1m[36mPhoto Load (1.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (64.1ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (14.3ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (14.4ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (6.1ms)
+Rendered home/index.html.haml within layouts/application (384.4ms)
+Rendered layouts/_tab-link.html.haml (5.0ms)
+Rendered layouts/_header.html.haml (67.0ms)
+Rendered layouts/_alerts.html.haml (0.7ms)
+Rendered layouts/_tab-link.html.haml (5.2ms)
+Rendered layouts/_footer.html.haml (8.2ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 1088ms (Views: 674.5ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:03:58 -0300
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-11-08 02:03:58 -0300
+Served asset /devise.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:03:58 -0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 02:03:58 -0300
+Served asset /icon-se6154cc7f1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:58 -0300
+Served asset /jquery.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /plugins.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /slide.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /contact.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /home.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /application.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-11-08 02:03:59 -0300
+Served asset /saw-white-down.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:04:18 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (176.7ms)
+  [1m[35mPersonal Load (1.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (203.7ms)
+  [1m[35mPhoto Load (1.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (56.2ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (13.5ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (15.0ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (6.7ms)
+Rendered home/index.html.haml within layouts/application (499.5ms)
+Rendered layouts/_tab-link.html.haml (4.8ms)
+Rendered layouts/_header.html.haml (7.4ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (4.3ms)
+Rendered layouts/_footer.html.haml (7.1ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 1055ms (Views: 622.4ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /main.css - 200 OK (34ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /devise.css - 200 OK (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /icon-se6154cc7f1.png - 200 OK (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:19 -0300
+Served asset /jquery.js - 200 OK (21ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /jquery.mousewheel.js - 200 OK (8ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /plugins.js - 200 OK (28ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /app.js - 200 OK (2ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /slide.js - 200 OK (4ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /contact.js - 200 OK (35ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /home.js - 200 OK (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /application.js - 200 OK (55ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-11-08 02:04:20 -0300
+Served asset /saw-white-down.png - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:13:48 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (164.1ms)
+  [1m[36mPersonal Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (86.6ms)
+  [1m[36mPhoto Load (1.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (63.4ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (14.7ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (14.9ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (6.5ms)
+Rendered home/index.html.haml within layouts/application (377.4ms)
+Rendered layouts/_tab-link.html.haml (6.4ms)
+Rendered layouts/_header.html.haml (64.0ms)
+Rendered layouts/_alerts.html.haml (0.6ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_footer.html.haml (6.8ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 985ms (Views: 555.7ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:13:49 -0300
+Served asset /main.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:13:49 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:49 -0300
+Served asset /jquery.js - 304 Not Modified (96ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:49 -0300
+Served asset /app.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:49 -0300
+Served asset /plugins.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /slide.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /contact.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:13:50 -0300
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:14:04 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (171.4ms)
+  [1m[35mPersonal Load (1.1ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (71.5ms)
+  [1m[35mPhoto Load (1.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (56.4ms)
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (18.3ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (15.7ms)
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (7.1ms)
+Rendered home/index.html.haml within layouts/application (367.8ms)
+Rendered layouts/_header.html.haml (176.2ms)
+Completed 500 Internal Server Error in 1044ms
+
+ActionView::Template::Error (Filter "coffescript" is not defined.):
+    1: :coffescript
+    2:   alert('hola')
+    3: %img(src="http://localhost:3000/assets/icon-se6154cc7f1.png")
+    4: %header
+  app/views/layouts/_header.html.haml:1
+  app/views/layouts/application.html.haml:29:in `_app_views_layouts_application_html_haml___3634635783582475718_33780500'
+
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.5ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /home/diego/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:18:14 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.8ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (149.7ms)
+  [1m[36mPersonal Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (174.4ms)
+  [1m[36mPhoto Load (1.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (50.4ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.1ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (11.6ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (4.6ms)
+Rendered home/index.html.haml within layouts/application (427.4ms)
+Rendered layouts/_tab-link.html.haml (5.9ms)
+Rendered layouts/_header.html.haml (70.1ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (4.7ms)
+Rendered layouts/_footer.html.haml (7.6ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 1025ms (Views: 603.6ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /main.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /slide.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /contact.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:15 -0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:18:55 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (225.7ms)
+  [1m[35mPersonal Load (0.7ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (62.7ms)
+  [1m[35mPhoto Load (1.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (48.2ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (10.4ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (12.7ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (7.1ms)
+Rendered home/index.html.haml within layouts/application (387.6ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (49.4ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_footer.html.haml (6.4ms)
+Rendered layouts/_ga.html.haml (0.3ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 948ms (Views: 537.1ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:18:56 -0300
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:18:56 -0300
+Served asset /application.css - 304 Not Modified (59ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /plugins.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /slide.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /contact.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:18:57 -0300
+Served asset /application.js - 304 Not Modified (34ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:20:22 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (115.3ms)
+  [1m[36mPersonal Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (67.0ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (55.0ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.0ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.7ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (5.4ms)
+Rendered home/index.html.haml within layouts/application (290.9ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (59.5ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (4.8ms)
+Rendered layouts/_footer.html.haml (7.5ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 830ms (Views: 431.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /slide.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /plugins.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /app.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /contact.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /home.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:20:24 -0300
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:27:52 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (123.2ms)
+  [1m[35mPersonal Load (1.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (58.4ms)
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (54.4ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (12.7ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (10.6ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (4.7ms)
+Rendered home/index.html.haml within layouts/application (286.5ms)
+Rendered layouts/_tab-link.html.haml (4.0ms)
+Rendered layouts/_header.html.haml (169.1ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (4.8ms)
+Rendered layouts/_footer.html.haml (7.7ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 965ms (Views: 545.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /plugins.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /slide.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /contact.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /home.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:27:53 -0300
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:29:35 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.6ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (250.3ms)
+  [1m[36mPersonal Load (1.3ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (1.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (77.2ms)
+  [1m[36mPhoto Load (1.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (55.0ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.7ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (10.8ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (5.4ms)
+Rendered home/index.html.haml within layouts/application (435.8ms)
+Rendered layouts/_tab-link.html.haml (4.8ms)
+Rendered layouts/_header.html.haml (63.1ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (3.5ms)
+Rendered layouts/_footer.html.haml (5.4ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.2ms)
+Completed 200 OK in 1030ms (Views: 594.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /app.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /plugins.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /home.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /slide.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /contact.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:29:36 -0300
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:30:38 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.9ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (115.7ms)
+  [1m[35mPersonal Load (1.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (70.9ms)
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (50.9ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (11.5ms)
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (10.6ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (6.9ms)
+Rendered home/index.html.haml within layouts/application (291.0ms)
+Rendered layouts/_tab-link.html.haml (3.9ms)
+Rendered layouts/_header.html.haml (58.2ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.5ms)
+Rendered layouts/_footer.html.haml (6.3ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 954ms (Views: 534.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /main.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /plugins.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /app.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /slide.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /contact.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:39 -0300
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:30:56 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (122.7ms)
+  [1m[36mPersonal Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (64.0ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (44.8ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.2ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (11.4ms)
+  [1m[35mPhoto Load (0.8ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (7.2ms)
+Rendered home/index.html.haml within layouts/application (283.2ms)
+Rendered layouts/_tab-link.html.haml (4.2ms)
+Rendered layouts/_header.html.haml (52.7ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (5.0ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 852ms (Views: 438.5ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:30:57 -0300
+Served asset /main.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:30:57 -0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /plugins.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /jquery.mousewheel.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /slide.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /contact.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /home.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:30:58 -0300
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:31:12 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mPortada Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1[0m
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (172.8ms)
+  [1m[35mPersonal Load (1.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (85.5ms)
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (62.4ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (15.0ms)
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (15.1ms)
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (6.5ms)
+Rendered home/index.html.haml within layouts/application (384.8ms)
+Rendered layouts/_tab-link.html.haml (124.7ms)
+Rendered layouts/_header.html.haml (127.5ms)
+Rendered layouts/_alerts.html.haml (0.5ms)
+Rendered layouts/_tab-link.html.haml (6.0ms)
+Rendered layouts/_footer.html.haml (9.8ms)
+Rendered layouts/_ga.html.haml (0.4ms)
+Rendered layouts/_chrome-frame.html.haml (0.4ms)
+Completed 200 OK in 1046ms (Views: 629.6ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /main.css - 200 OK (4ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /devise.css - 200 OK (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /plugins.js - 200 OK (4ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /app.js - 200 OK (0ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /slide.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /jquery.mousewheel.js - 200 OK (2ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /contact.js - 200 OK (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:13 -0300
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:14 -0300
+Served asset /application.js - 200 OK (17ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 02:31:16 -0300
+Served asset /icon-se6154cc7f1.png - 200 OK (11ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-11-08 02:31:16 -0300
+Served asset /saw-white-down.png - 200 OK (49ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-08 02:31:36 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mPortada Load (1.1ms)[0m  SELECT "articles".* FROM "articles" WHERE (section='po') AND (draft='f') LIMIT 1
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 8 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (326.2ms)
+  [1m[36mPersonal Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (section='pe') AND (draft='f') ORDER BY published_at DESC[0m
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 7 AND "photos"."photoable_type" = 'Article'
+Rendered home/_article.html.haml (70.2ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 1 AND "photos"."photoable_type" = 'Article'[0m
+Rendered home/_article.html.haml (55.6ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 10 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (11.3ms)
+  [1m[35mPhoto Load (0.7ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 5 AND "photos"."photoable_type" = 'Article' LIMIT 1[0m
+Rendered home/_article.html.haml (12.5ms)
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photoable_id" = 14 AND "photos"."photoable_type" = 'Article' LIMIT 1
+Rendered home/_article.html.haml (4.8ms)
+Rendered home/index.html.haml within layouts/application (502.4ms)
+Rendered layouts/_tab-link.html.haml (4.6ms)
+Rendered layouts/_header.html.haml (6.8ms)
+Rendered layouts/_alerts.html.haml (0.4ms)
+Rendered layouts/_tab-link.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (5.5ms)
+Rendered layouts/_ga.html.haml (0.2ms)
+Rendered layouts/_chrome-frame.html.haml (0.3ms)
+Completed 200 OK in 1080ms (Views: 652.5ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:37 -0300
+Served asset /main.css - 200 OK (7ms)
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:37 -0300
+Served asset /devise.css - 200 OK (45ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-08 02:31:37 -0300
+Served asset /application.css - 200 OK (34ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /jquery.mousewheel.js - 200 OK (26ms)
+
+
+Started GET "/assets/plugins.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /plugins.js - 200 OK (7ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /app.js - 200 OK (1ms)
+
+
+Started GET "/assets/slide.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /slide.js - 200 OK (2ms)
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /contact.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /home.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /application.js - 200 OK (14ms)
+
+
+Started GET "/assets/icon-se6154cc7f1.png" for 127.0.0.1 at 2012-11-08 02:31:38 -0300
+Served asset /icon-se6154cc7f1.png - 200 OK (1ms)
+
+
+Started GET "/assets/saw-white-down.png" for 127.0.0.1 at 2012-11-08 02:31:39 -0300
+Served asset /saw-white-down.png - 200 OK (1ms)
