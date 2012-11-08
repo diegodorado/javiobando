@@ -73,13 +73,22 @@ class root.App
         #.... not very pretty....
       ), 250
     )
+    
+    
+    src = $('#header-arrows .icon-arrows').css('backgroundImage').replace(/^url\(["']?/, '').replace(/["']?\)$/, '')
+    if $.browser.msie
+      src += "?" + new Date().getTime()
+
+    $("<img />", {src:src}).bind 'load', () ->
+      setTimeout (->
+        $('body').removeClass 'loading'
+      ), 1000 
+      #$('body header').find('#header-arrows, .tab-link, .hand-down,  .cp-links').animate('opacity',1)
 
     @window.load =>
       #font fully loaded
       @window.trigger 'resize'
-      setTimeout (->
-        $('body').removeClass 'loading'
-      ), 500
+
   #handles slides scroll
   bind_scroll: ->
     #see http://ejohn.org/blog/learning-from-twitter/
