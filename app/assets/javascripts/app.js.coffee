@@ -145,6 +145,7 @@ class root.App
             s.slideDownQuiet() for s in @slides
   moveNext: ->
     return if @swaping
+    return @activeSlide().snapBreakpoint() if @activeSlide().shouldSnapBreakpoint(true)
     return @activeSlide().snapBottom() if @activeSlide().shouldSnapBottom()
     return @moveLast() if @active_index >= @slides.length - 2
     @swaping = true
@@ -153,6 +154,7 @@ class root.App
       @swaping = false
   movePrev: ->
     return if @swaping
+    return @activeSlide().snapBreakpoint() if @activeSlide().shouldSnapBreakpoint(false)
     return @activeSlide().snapTop() if @activeSlide().shouldSnapTop()
     return @moveFirst() if @active_index <= 1
     @swaping = true

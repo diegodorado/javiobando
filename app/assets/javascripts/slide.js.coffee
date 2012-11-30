@@ -8,6 +8,7 @@ class root.Slide
     @$el.addClass 'slide'
     @$el.css 'z-index', 10000 - @index
     @first = @index is 0
+    @comercial = $('body.comercial').size() > 0
     @transparent = @first and @$el.is 'header'
     @last = @$el.is 'footer'
     @slideshow = @$el.hasClass 'ss'
@@ -114,6 +115,15 @@ class root.Slide
     mt = parseInt @$el.css('marginTop') , 10
     mt < 0
     
+
+  shouldSnapBreakpoint: (movingNext)->
+    return false unless @first and @comercial
+    mt = parseInt @$el.css('marginTop') , 10
+    if movingNext
+      mt > -270
+    else
+      mt < -270
+
   shouldSnapBottom: ->
     return false if @transparent
     mt = parseInt @$el.css('marginTop') , 10
@@ -135,6 +145,11 @@ class root.Slide
   snapBottom: (callback)->
     @$el.animate
       marginTop: -(@height-@minHeight)
+    , @speed, callback
+
+  snapBreakpoint: (callback)->
+    @$el.animate
+      marginTop: -270
     , @speed, callback
 
   slideUp: (callback)->
