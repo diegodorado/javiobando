@@ -147,9 +147,9 @@ body.home.comercial
   right: 132px
   +opacity(0.85)
   z-index: 10
-  i, span
-    display: block
   span
+    +transition(background 0.4s ease)
+    display: block
     background: $green
     padding-top: 52px
     height: 18px
@@ -160,6 +160,18 @@ body.home.comercial
     font-family: Montserrat
     font-size: 11px
     padding-bottom: 8px
+  .arrow-big
+    +transition(border 0.4s ease)
+    display: block
+    border-color: $green transparent transparent
+    border-width: 29px 42px 0px
+    border-style: solid
+  &:hover
+    span
+      background: $grey1
+    .arrow-big
+      border-top-color: $grey1
+        
 
 
 

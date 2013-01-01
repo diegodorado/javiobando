@@ -1,0 +1,19 @@
+.sass-cache
+.bundle
+db/*.sqlite3*
+log/*.log
+*.log
+tmp/**/*
+tmp/*
+doc/api
+doc/app
+*.swp
+* ̃
+.env
+.rvmrc
+.livereload
+public/system/*
+public/assets
+
+# Ignore application configuration
+/config/application.yml

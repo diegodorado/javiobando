@@ -9,13 +9,15 @@ gem "devise", '2.0.4'
 gem 'jquery-rails'
 
 gem 'paperclip', '3.0.2'
+gem 'aws-sdk'
 gem "redcarpet",'2.1.0'
 
 group :production do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :development do
+  gem "figaro" #adds env variables
   gem 'sqlite3'
   gem "faker"
   gem "populator"

@@ -1,8 +1,4 @@
--if current_page?(root_path)
-  %a.tab-link{:href=>comercial_path}
-    %span comercial
-    %i.icon-tab
--else
-  %a.tab-link{:href=>root_path}
-    %span personal
-    %i.icon-tab
+%a.tab-link{:href=>(current_page?(root_path) ? comercial_path : root_path)}
+  %span 
+    =(current_page?(root_path) ? "comercial" : "personal")
+  %i.arrow-big

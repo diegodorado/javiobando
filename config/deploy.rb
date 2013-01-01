@@ -139,6 +139,15 @@ namespace :assets do
     status = system("rsync -avze 'ssh' public/assets/ #{user}@#{application}:#{shared_path}/assets/")
     puts status ? "OK" : "FAILED"
   end
+  
+  desc <<-DESC
+    download uploaded assets
+  DESC
+  task :download, :roles => assets_role, :except => { :no_release => true } do
+    status = system("rsync --delete -avze 'ssh' #{user}@#{application}:#{shared_path}/system/ public/system/")
+    puts status ? "OK" : "FAILED"
+  end
+  
 end
 
 
